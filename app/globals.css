@@ -112,6 +112,11 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+body,
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -130,7 +135,7 @@
 
 .text-grd {
   -webkit-text-fill-color: transparent;
-  @apply bg-gradient-to-l from-[#392f2d] to-[#ecd920] bg-clip-text;
+  @apply bg-gradient-to-l from-[#ecd920] to-[#392f2d] bg-clip-text;
 }
 
 .sidebar {

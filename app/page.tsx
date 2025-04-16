@@ -1,4 +1,5 @@
 import Content from "@/components/Content";
+import CTA from "@/components/core/CTA";
 import ServiceCard from "@/components/core/ServiceCard";
 import { Button } from "@/components/ui/button";
 import {
@@ -23,6 +24,37 @@ import {
   Warehouse,
 } from "lucide-react";
 import Image from "next/image";
+import FAQs from "../components/core/FAQs";
+import Link from "next/link";
+import Services from "@/components/core/Services";
+import { LocationCard } from "@/components/core/LocationCards";
+
+const locations = [
+  {
+    city: "Movers in Dubai",
+    description:
+      "Connect with Movers in Dubai, just call / whatsapp to us and you got highly trained movers in you gate!",
+    link: "/movers-in-dubai",
+  },
+  {
+    city: "Movers in Sharjah",
+    description:
+      "Looking for reliable movers in Sharjah? Call or WhatsApp us and our trained team will be at your doorstep in no time!",
+    link: "/movers-in-sharjah",
+  },
+  {
+    city: "Movers in Abu Dhabi",
+    description:
+      "Need expert movers in Abu Dhabi? Just give us a call or ping us on WhatsApp — our team is ready to help you move with ease!",
+    link: "/movers-in-abu-dhabi",
+  },
+  {
+    city: "Movers in Ajman",
+    description:
+      "Moving in or out of Ajman? We’re just a call or WhatsApp away — let our skilled movers handle everything for you!",
+    link: "/movers-in-ajman",
+  },
+];
 
 export default function Home() {
   return (
@@ -40,12 +72,16 @@ export default function Home() {
               UAE.
             </p>
             <div className="mt-5 flex gap-x-5">
-              <Button size={"lg"}>
-                Get A Free Quote <FileCheckIcon />
-              </Button>
-              <Button size={"lg"} variant={"ghost"}>
-                About Us <UsersRoundIcon />
-              </Button>
+              <Link href={"/contact-us"}>
+                <Button size={"lg"}>
+                  Get A Free Quote <FileCheckIcon />
+                </Button>
+              </Link>
+              <Link href={"/about-us"}>
+                <Button size={"lg"} variant={"ghost"}>
+                  About Us <UsersRoundIcon />
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="bg-gradient-to-r from-primary to-[#1c1716] min-h-96 md:ml-16 rounded-4xl md:p-8 p-5">
@@ -72,7 +108,7 @@ export default function Home() {
                   className="text-primary p-3 md:p-4 rounded-lg border border-[#ECD920] bg-gray-200"
                   name="moving-from "
                 >
-                  <option value="" selected disabled>
+                  <option selected disabled>
                     Moving From?
                   </option>
                   <option value="Dubai">Dubai</option>
@@ -84,7 +120,7 @@ export default function Home() {
                   className="text-primary p-3 md:p-4 rounded-lg border border-[#ECD920] bg-gray-200"
                   name="moving-to"
                 >
-                  <option value="" selected disabled>
+                  <option selected disabled>
                     Moving From?
                   </option>
                   <option value="Dubai">Dubai</option>
@@ -242,98 +278,21 @@ export default function Home() {
               </li>
             </ul>
             <div className="flex gap-x-3 mt-3">
-              <Button>View Our Services</Button>
-              <Button variant={"link"}>More About Us</Button>
+              <Link href={"#services-section"}>
+                <Button>View Our Services</Button>
+              </Link>
+
+              <Link href="#moving-cost-section">
+                <Button variant={"link"}>Our Pricing List</Button>
+              </Link>
             </div>
           </div>
         </section>
-        <section className="con mt-36 md:px-0 px-3 ">
-          <h2 className="md:text-4xl text-3xl font-semibold text-center">
-            Movers And Packers Services in Dubai
-          </h2>
-          <p className="max-w-3xl mx-auto text-center text-muted-foreground mt-3">
-            Abu Muhammad Movers offers a full spectrum of moving and packing
-            services to cater to your specific requirements:
-          </p>
-          <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-10 mt-10">
-            <ServiceCard
-              list={[
-                {
-                  title: "Home Moving in Dubai",
-                  description:
-                    "From apartments to villas, our home movers in Dubai ensure a smooth transition for your residential move. We specialize in apartment movers in Dubai, villa movers in Dubai, and comprehensive house moving in Dubai.",
-                  link: "/home-moving",
-                  icon: (
-                    <HomeIcon className="w-6 h-6 text-gray-500 dark:text-gray-400 mb-3" />
-                  ),
-                },
-                {
-                  title: "Office Moving Within UAE",
-                  description:
-                    "Looking for reliable office moving within the UAE? Our professional movers and packers in Dubai and beyond specialize in seamless corporate relocations. We manage everything from packing and transporting furniture to IT equipment for businesses of all sizes.",
-                  link: "/office-moving",
-                  icon: (
-                    <Building2Icon className="w-6 h-6 text-gray-500 dark:text-gray-400 mb-3" />
-                  ),
-                },
-                {
-                  title: "Local Moving in Dubai",
-                  description:
-                    "Whether you're moving within Dubai as local movers in Dubai, we provide reliable services to ensure your belongings arrive safely.",
-                  link: "/local-moving-dubai",
-                  icon: (
-                    <MapPinnedIcon className="w-6 h-6 text-gray-500 dark:text-gray-400 mb-3" />
-                  ),
-                },
-                {
-                  title: "Single Item Moving",
-                  description:
-                    "No move is too small. We handle the relocation of individual items with the same care and attention to detail.",
-                  link: "/single-item-moving",
-                  icon: (
-                    <MapPinnedIcon className="w-6 h-6 text-gray-500 dark:text-gray-400 mb-3" />
-                  ),
-                },
-                {
-                  title: "Packing Services",
-                  description:
-                    "Our expert packers and movers in Dubai use high-quality packing materials to safeguard your possessions during transit. We are known for our meticulous packing and moving services.",
-                  link: "/packing-services",
-                  icon: (
-                    <PackageCheckIcon className="w-6 h-6 text-gray-500 dark:text-gray-400 mb-3" />
-                  ),
-                },
-                {
-                  title: "Furniture Installation",
-                  description:
-                    "Our team provides furniture dismantling and assembly services, ensuring that your furniture is set up correctly in your new space. We are the best furniture movers in Dubai.",
-                  link: "/furniture-installation-dubai",
-                  icon: (
-                    <Drill className="w-6 h-6 text-gray-500 dark:text-gray-400 mb-3" />
-                  ),
-                },
-                {
-                  title: "Fine Art Relocation",
-                  description:
-                    "Trust our specialists to handle the secure relocation of your delicate and valuable fine art pieces.",
-                  link: "/fine-art-relocation",
-                  icon: (
-                    <Piano className="w-6 h-6 text-gray-500 dark:text-gray-400 mb-3" />
-                  ),
-                },
-                {
-                  title: "Storage Services Dubai",
-                  description:
-                    "Secure storage solutions are available for your short-term or long-term needs in dubai, providing a safe space for your belongings.",
-                  link: "/storage-services-dubai",
-                  icon: (
-                    <Warehouse className="w-6 h-6 text-gray-500 dark:text-gray-400 mb-3" />
-                  ),
-                },
-              ]}
-            />
-          </div>
-        </section>
+        <Services
+          title=" Movers And Packers Services in Dubai"
+          desc="Abu Muhammad Movers offers a full spectrum of moving and packing
+        services to cater to your specific requirements:"
+        />
         <section className="max-w-5xl mt-36 bg-accent mx-auto grid md:grid-cols-5 grid-cols-1 rounded-3xl overflow-hidden">
           <div className="relative md:h-auto h-96 col-span-2">
             <Image
@@ -348,10 +307,11 @@ export default function Home() {
               We Are Professional Moving Company In Dubai
             </h2>
             <p className="text-muted-foreground ">
-              We're experts in helping people move in the UAE. Our team is made
-              up of experienced professionals who know exactly what they're
-              doing. We have all the latest equipment and technology to make
-              your move as smooth as possible.
+              Moving can be stressful — but that’s where we come in. We’re a
+              team of experienced movers who genuinely care about making your
+              move in the Dubai, UAE as easy and smooth as possible. With the
+              right skills and modern tools, we’ve got everything needed to get
+              you settled into your new place without the hassle.
             </p>
             <p className="text-muted-foreground mt-1">
               We value your feedback and are always looking for ways to improve
@@ -359,12 +319,17 @@ export default function Home() {
               efficiency.
             </p>
             <div className="mt-4 flex space-x-4">
-              <Button>
-                Get A Free Quote <FileCheck2Icon />
-              </Button>
-              <Button variant={"outline"}>
-                About Us <LucideUsers2 />
-              </Button>
+              <Link href={"/contact-us"}>
+                <Button>
+                  Get A Free Quote <FileCheck2Icon />
+                </Button>
+              </Link>
+              <Link href={"/about-us"}>
+                {" "}
+                <Button variant={"outline"}>
+                  About Us <LucideUsers2 />
+                </Button>
+              </Link>
             </div>
             <div className="mt-10 flex md:gap-x-10 gap-x-5 justify-center">
               <h3 className="flex flex-col text-center">
@@ -383,88 +348,28 @@ export default function Home() {
             <div className="col-span-1">
               <h2 className="text-3xl/9 text-primary-foreground font-semibold">
                 Find Movers and Packers{" "}
-                <span className=" bg-[#ECD920] text-primary px-2">
+                <span className="bg-[#ECD920] text-primary px-2">
                   Close to You
                 </span>
               </h2>
-              <p className="text-gray-200 mt-5 ">
+              <p className="text-gray-200 mt-5">
                 Moving within the UAE? We connect you with movers and packers
                 across all major cities in the UAE. Discover your local options
                 below.
               </p>
-              <Button variant={"secondary"} className="mt-3">
+              <Button variant="secondary" className="mt-3">
                 Whatsapp To Us <MessageCircleMore />
               </Button>
             </div>
             <div className="col-span-2 grid md:grid-cols-2 grid-cols-1 gap-5 md:ml-20">
-              <div className="bg-accent rounded-2xl overflow-hidden p-4">
-                <h3 className="text-xl hover:underline underline-offset-4 transition-colors">
-                  Movers in Dubai
-                </h3>
-                <p className="text-muted-foreground text-sm mt-2">
-                  Connect with Movers in Dubai, just call / whatsapp to us and
-                  you got highly trained movers in you gate!
-                </p>
-                <div className="flex gap-x-3 mt-2">
-                  <Button size={"sm"} variant={"link"}>
-                    whatsapp <MessageCircleMore />
-                  </Button>
-                  <Button size={"sm"} variant={"link"}>
-                    more details <MoreHorizontal />
-                  </Button>
-                </div>
-              </div>
-              <div className="bg-accent rounded-2xl overflow-hidden p-4">
-                <h3 className="text-xl hover:underline underline-offset-4 transition-colors">
-                  Movers in Sharjah
-                </h3>
-                <p className="text-muted-foreground text-sm mt-2">
-                  Connect with Movers in Dubai, just call / whatsapp to us and
-                  you got highly trained movers in you gate!
-                </p>
-                <div className="flex gap-x-3 mt-2">
-                  <Button size={"sm"} variant={"link"}>
-                    whatsapp <MessageCircleMore />
-                  </Button>
-                  <Button size={"sm"} variant={"link"}>
-                    more details <MoreHorizontal />
-                  </Button>
-                </div>
-              </div>
-              <div className="bg-accent rounded-2xl overflow-hidden p-4">
-                <h3 className="text-xl hover:underline underline-offset-4 transition-colors">
-                  Movers in Abu Dhabi
-                </h3>
-                <p className="text-muted-foreground text-sm mt-2">
-                  Connect with Movers in Dubai, just call / whatsapp to us and
-                  you got highly trained movers in you gate!
-                </p>
-                <div className="flex gap-x-3 mt-2">
-                  <Button size={"sm"} variant={"link"}>
-                    whatsapp <MessageCircleMore />
-                  </Button>
-                  <Button size={"sm"} variant={"link"}>
-                    more details <MoreHorizontal />
-                  </Button>
-                </div>
-              </div>
-              <div className="bg-accent rounded-2xl overflow-hidden p-4">
-                <h3 className="text-xl hover:underline underline-offset-4 transition-colors">
-                  Movers in Ajman
-                </h3>
-                <p className="text-muted-foreground text-sm mt-2">
-                  Connect with Movers in Dubai, just call / whatsapp to us and
-                  you got highly trained movers in you gate!
-                </p>
-                <div className="flex gap-x-3 mt-2">
-                  <Button size={"sm"} variant={"link"}>
-                    whatsapp <MessageCircleMore />
-                  </Button>
-                  <Button size={"sm"} variant={"link"}>
-                    more details <MoreHorizontal />
-                  </Button>
-                </div>
-              </div>
+              {locations.map((location, index: number) => (
+                <LocationCard
+                  key={index}
+                  city={location.city}
+                  description={location.description}
+                  link={location.link}
+                />
+              ))}
             </div>
           </div>
         </section>
@@ -482,7 +387,7 @@ export default function Home() {
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-5 relative">
                 <Image
                   src={"/images/Initial-Consultation-icon.png"}
-                  alt=" 1. Book Your Service icon"
+                  alt="1. Book Your Service icon"
                   width={40}
                   height={40}
                 />
@@ -491,15 +396,17 @@ export default function Home() {
                 1. Book Your Service
               </h3>
               <p className="text-muted-foreground mt-2 text-center text-sm">
-                Start with a quick call or an in-person chat. We’ll go over your
-                moving needs and handle all the details to make it easy for you.
+                Get started with a simple call or meet-up. We'll discuss your
+                moving service needs and organize everything for a stress-free
+                experience.
               </p>
             </div>
+
             <div className="bg-accent rounded-2xl p-5">
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-5 relative">
                 <Image
                   src={"/images/before-we-move-icon.png"}
-                  alt="  2. Before We Move icon"
+                  alt="2. Before We Move icon"
                   width={40}
                   height={40}
                 />
@@ -508,16 +415,17 @@ export default function Home() {
                 2. Before We Move
               </h3>
               <p className="text-muted-foreground mt-2 text-center text-sm">
-                We’ll visit your place to assess what needs moving. This helps
-                us plan packing and ensure a smooth moving day with no
-                surprises.
+                Our moving experts will visit your location to inspect and
+                evaluate what needs to be moved, ensuring accurate planning and
+                efficient service on moving day.
               </p>
             </div>
+
             <div className="bg-accent rounded-2xl p-5">
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-5 relative">
                 <Image
                   src={"/images/moving-plan-icon.png"}
-                  alt="  2. Before We Move icon"
+                  alt="3. The Move Plan icon"
                   width={40}
                   height={40}
                 />
@@ -526,16 +434,17 @@ export default function Home() {
                 3. The Move Plan
               </h3>
               <p className="text-muted-foreground mt-2 text-center text-sm">
-                Once we’ve discussed your needs, we create a detailed plan for
-                your move—covering timing, crew size, and costs—so everything
-                runs smoothly.
+                Based on your specific requirements, we’ll build a clear plan
+                outlining timing, team size, and estimated costs to keep your
+                relocation on track.
               </p>
             </div>
+
             <div className="bg-accent rounded-2xl p-5">
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-5 relative">
                 <Image
                   src={"/images/packing-and-loading-icon.png"}
-                  alt=" 4. Packing and Loading icon"
+                  alt="4. Packing and Loading icon"
                   width={40}
                   height={40}
                 />
@@ -544,16 +453,17 @@ export default function Home() {
                 4. Packing and Loading
               </h3>
               <p className="text-muted-foreground mt-2 text-center text-sm">
-                Our team uses high-quality materials to pack your items
-                securely. We carefully load everything onto our trucks to ensure
-                your belongings stay safe during the move.
+                Our professional packers use high-grade packing materials to
+                protect your items. We load everything carefully to guarantee
+                safe and secure transport.
               </p>
             </div>
+
             <div className="bg-accent rounded-2xl p-5">
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-5 relative">
                 <Image
                   src={"/images/safe-transportation.png"}
-                  alt=" 5. Safe Transportation icon"
+                  alt="5. Safe Transportation icon"
                   width={40}
                   height={40}
                 />
@@ -562,16 +472,17 @@ export default function Home() {
                 5. Safe Transportation
               </h3>
               <p className="text-muted-foreground mt-2 text-center text-sm">
-                Safety is our priority. Our experienced drivers choose the best
-                routes, and our trucks are thoroughly inspected for a smooth,
-                secure move.
+                Your safety is our mission. Our licensed drivers choose optimal
+                routes while our moving trucks are regularly inspected for
+                reliable transport.
               </p>
             </div>
+
             <div className="bg-accent rounded-2xl p-5">
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-5 relative">
                 <Image
                   src={"/images/home-setting-icon.png"}
-                  alt=" 6. Unpacking and Settling-in icon"
+                  alt="6. Unpacking and Settling-in icon"
                   width={40}
                   height={40}
                 />
@@ -580,8 +491,9 @@ export default function Home() {
                 6. Unpacking and Settling-in
               </h3>
               <p className="text-muted-foreground mt-2 text-center text-sm">
-                We’ll unpack your belongings and help set everything up just the
-                way you like it, ensuring you feel at home before we leave.
+                Once we reach your new location, we’ll unpack your belongings
+                and help set things up—making sure your new space feels just
+                like home.
               </p>
             </div>
           </div>
@@ -668,7 +580,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="md:px-0 px-3 mt-36">
+        <section id="moving-cost-section" className="md:px-0 px-3 mt-36">
           <h2 className="text-center max-w-2xl font-semibold mb-5 mx-auto  md:text-4xl text-3xl">
             Moving Cost Of Abu Muhammad Movers in Dubai
           </h2>
@@ -725,6 +637,83 @@ export default function Home() {
             pricing.
           </p>
         </section>
+        <CTA />
+        <FAQs
+          Faqs={[
+            {
+              question:
+                "How does Abu Muhammad Movers utilize technology to enhance the moving experience?",
+              answer:
+                "Abu Muhammad Movers uses advanced technology such as real-time GPS tracking, smart scheduling, and a digital inventory system. This keeps you informed and in control throughout your move, ensuring a smooth, reliable, and efficient experience across the UAE and the MENA region.",
+            },
+            {
+              question:
+                "Is it necessary to book Abu Muhammad Movers in advance?",
+              answer:
+                "While early booking is always recommended—especially during busy seasons—our flexible scheduling system often allows for last-minute bookings. We aim to make even urgent relocations simple and stress-free.",
+            },
+
+            {
+              question:
+                "What specialized moving services does Abu Muhammad Movers provide?",
+              answer:
+                "We offer a full suite of moving services, including residential, office, and commercial relocations. We also handle fragile and valuable items with care using specialized packing and handling techniques tailored to each client's needs.",
+            },
+            {
+              question:
+                "What makes Abu Muhammad Movers different from other moving companies?",
+              answer:
+                "Abu Muhammad Movers stands out with its tech-enabled moving process. From GPS tracking and route optimization to customer-centric services, we provide a safer, faster, and more transparent moving experience than traditional movers.",
+            },
+            {
+              question: "How can I get a quick quote for my move?",
+              answer:
+                "Visit our website to receive an instant and transparent quote. Just enter a few details about your move, and you’ll get a pricing estimate within seconds.",
+            },
+            {
+              question: "Do you provide packing services?",
+              answer:
+                "Yes, our professional teams offer full, partial, and fragile-item packing options to suit any type of move, ensuring your items are packed safely and efficiently.",
+            },
+
+            {
+              question: "Which areas does Abu Muhammad Movers operate in?",
+              answer:
+                "We serve all major locations within Dubai and across the UAE, and we also offer cross-border and international relocation services within the MENA region and beyond.",
+            },
+            {
+              question:
+                "When is the best time to book a move with Abu Muhammad Movers?",
+              answer:
+                "Booking 1 to 2 weeks ahead is ideal to secure your preferred date, but we also accommodate short-notice moves depending on availability.",
+            },
+            {
+              question: "Do you offer storage services?",
+              answer:
+                "Yes, Abu Muhammad Movers provides safe, climate-controlled storage units for both short-term and long-term needs—perfect during transitions or renovations.",
+            },
+            {
+              question: "Are packing materials included in the service?",
+              answer:
+                "Yes, packing materials are included in our Standard and Premium packages. If you choose our Saver package, materials can be added as an optional upgrade.",
+            },
+            {
+              question: "Do you handle furniture assembly and disassembly?",
+              answer:
+                "Yes, our trained crew provides professional furniture disassembly and reassembly as part of our Standard and Premium moving packages.",
+            },
+            {
+              question: "What safety measures are in place during moves?",
+              answer:
+                "We prioritize the safety of your items by using top-grade packing materials, skilled professionals, and secure transportation practices to prevent damage and ensure peace of mind.",
+            },
+            {
+              question: "How do I contact customer support during my move?",
+              answer:
+                "Abu Muhammad Movers offers 24/7 customer support via phone, email, and live chat—so you’re never left without assistance when you need it most.",
+            },
+          ]}
+        />
       </main>
     </>
   );

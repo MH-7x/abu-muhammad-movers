@@ -1,4 +1,5 @@
 import { LucidePackageCheck, Medal, Truck, Warehouse } from "lucide-react";
+import Image from "next/image";
 import React, { ReactNode } from "react";
 
 const Content = () => {
@@ -10,11 +11,34 @@ const Content = () => {
             <div className="w-full px-4 lg:w-6/12">
               <div className="flex md:flex-row flex-col items-center -mx-3 sm:-mx-4">
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
-                  <div className="py-3 sm:py-4 bg-secondary rounded-2xl h-72 m-3"></div>
-                  <div className="py-3 sm:py-4 bg-red-300 rounded-2xl h-72 m-3"></div>
+                  <div className="py-3 sm:py-4 bg-secondary rounded-2xl h-72 m-3 relative overflow-hidden">
+                    <Image
+                      src={"/images/movers-team-of-abu-muhammad-mover.png"}
+                      alt="Team photo of Abu Muhammad Movers with trucks"
+                      fill
+                      className="absolute object-cover object-center"
+                    />
+                  </div>
+                  <div className="py-3 sm:py-4 bg-secondary rounded-2xl h-72 m-3 relative overflow-hidden">
+                    <Image
+                      src={
+                        "/images/movers-packing-household-furniture-in-dubai.png"
+                      }
+                      alt="Abu Muhammad Movers Team packing household furniture in Dubai"
+                      fill
+                      className="absolute object-cover object-center"
+                    />
+                  </div>
                 </div>
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
-                  <div className="relative z-10 md:my-4 m-3 bg-secondary rounded-2xl h-72 md:h-96"></div>
+                  <div className="relative z-10 md:my-4 m-3 bg-secondary rounded-2xl h-72 md:h-96 overflow-hidden">
+                    <Image
+                      src={"/images/team-packing-office-equipment.png"}
+                      alt="Abu Muhammad Movers Team packing office equipments"
+                      fill
+                      className="absolute object-cover object-center"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

@@ -5,8 +5,6 @@ import React from "react";
 import { Button } from "../ui/button";
 import {
   ArrowRight,
-  ArrowRightCircleIcon,
-  Contact2,
   ListChecks,
   LucidePhoneCall,
   Menu,
@@ -17,9 +15,9 @@ import {
 
 const MobileNavbar = () => {
   return (
-    <header className="w-full px-3  drop-shadow-xl bg-white py-1 fixed top-0 left-0 z-50">
+    <header className="w-full px-3  drop-shadow-xl bg-white py-2.5 fixed top-0 left-0 z-50">
       <nav className="flex items-center relative justify-between">
-        <Link className="w-44 h-14 relative" href={"/"}>
+        <Link className="w-[170px] h-11 relative " href={"/"}>
           <Image
             src={"/logo.png"}
             alt="Abu Muhammad Movers LOGO"
@@ -43,35 +41,57 @@ const MobileNavbar = () => {
             </label>
             <ul className="hidden peer-checked:block absolute top-10 bg-accent w-72 p-4 rounded-2xl drop-shadow-xl right-0">
               <div className="bg-white p-2 flex items-center justify-between rounded-lg">
-                <p>+92 3471309916</p>
+                <p>+971 55 6461731</p>
                 <div className="flex gap-x-2">
-                  <div className="cursor-pointer w-9 rounded-4xl h-9 border flex items-center justify-center">
-                    <LucidePhoneCall className="text-gray-500 w-5 h-5" />
-                  </div>
-                  <div className="cursor-pointer w-9 rounded-4xl h-9 border flex items-center justify-center">
-                    <MessageCircleMoreIcon className="text-gray-500 w-5 h-5" />
-                  </div>
+                  <Link title="Call" href={"tel:+971556461731"}>
+                    <div className="cursor-pointer w-9 rounded-4xl h-9 border flex items-center justify-center">
+                      <LucidePhoneCall className="text-gray-500 w-5 h-5" />
+                    </div>
+                  </Link>
+                  <Link
+                    href={
+                      "https://wa.me/+971556461731?text=I%20am%20looking%20for%20movers%20!"
+                    }
+                    title="WhatsApp"
+                  >
+                    <div className="cursor-pointer w-9 rounded-4xl h-9 border flex items-center justify-center">
+                      <MessageCircleMoreIcon className="text-gray-500 w-5 h-5" />
+                    </div>
+                  </Link>
                 </div>
               </div>
               <div className="bg-white p-2 flex items-center justify-between rounded-lg mt-3">
-                <p>+92 3471309916</p>
+                <p>+971 56 7878464</p>
                 <div className="flex gap-x-2">
-                  <div className="cursor-pointer w-9 rounded-4xl h-9 border flex items-center justify-center">
-                    <LucidePhoneCall className="text-gray-500 w-5 h-5" />
-                  </div>
-                  <div className="cursor-pointer w-9 rounded-4xl h-9 border flex items-center justify-center">
-                    <MessageCircleMoreIcon className="text-gray-500 w-5 h-5" />
-                  </div>
+                  <Link title="Call" href={"tel:+971556461731"}>
+                    <div className="cursor-pointer w-9 rounded-4xl h-9 border flex items-center justify-center">
+                      <LucidePhoneCall className="text-gray-500 w-5 h-5" />
+                    </div>
+                  </Link>
+                  <Link
+                    title="WhatsApp"
+                    href={
+                      "https://wa.me/+971567878464?text=I%20am%20looking%20for%20movers%20!"
+                    }
+                  >
+                    <div className="cursor-pointer w-9 rounded-4xl h-9 border flex items-center justify-center">
+                      <MessageCircleMoreIcon className="text-gray-500 w-5 h-5" />
+                    </div>
+                  </Link>
                 </div>
               </div>
               <div className="w-full h-11 mt-3 flex items-center gap-x-3 text-muted justify-between">
-                <Button variant={"link"}>
-                  Free Quote <ListChecks />
-                </Button>
-                <Button variant={"link"}>
-                  Send Mail
-                  <Send />
-                </Button>
+                <Link href={"/contact-us"}>
+                  <Button variant={"link"}>
+                    Free Quote <ListChecks />
+                  </Button>
+                </Link>
+                <Link href={"mailto:abumuhammad.movers@gmail.com"}>
+                  <Button variant={"link"}>
+                    Send Mail
+                    <Send />
+                  </Button>
+                </Link>
               </div>
             </ul>
           </div>
@@ -123,10 +143,7 @@ const Sidebar = () => {
                 title: "Home Moving",
                 link: "/home-moving",
               },
-              {
-                title: "Corporate Relocation",
-                link: "/corporate-relocation",
-              },
+
               {
                 title: "Office Moving",
                 link: "/office-moving",

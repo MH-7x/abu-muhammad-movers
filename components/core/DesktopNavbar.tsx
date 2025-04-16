@@ -5,14 +5,19 @@ import Image from "next/image";
 
 export const servicesLinks = [
   "/home-moving",
-  "/corporate-relocation",
   "/office-moving",
-  "/local-moving-dubai",
+  "/local-moving-in-dubai",
   "/packing-services",
   "/single-item-moving",
   "/furniture-installation",
-  "/storage-services",
+  "/storage-services-dubai",
   "/furniture-movers-dubai",
+];
+export const locationsLinks = [
+  "/movers-in-dubai",
+  "/movers-in-sharjah",
+  "/movers-in-abu-dhabi",
+  "/movers-in-ajman",
 ];
 import {
   ListChecks,
@@ -20,6 +25,13 @@ import {
   MessageCircleMoreIcon,
   Send,
 } from "lucide-react";
+export const companyLinks = ["/about-us", "/contact-us", "/resources"];
+export const othersLinks = [
+  "/faqs",
+  "/gallery",
+  "/sitemap",
+  "https://dubaiusedfurniture.ae/en",
+];
 const DesktopNavbar = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50">
@@ -37,10 +49,11 @@ const DesktopNavbar = () => {
         <div className="flex items-center gap-x-10">
           <ul className="flex items-center gap-x-2">
             <NavItem
+              links={servicesLinks}
               title="SERVICES"
               dropdownItems={[
                 "Home Moving",
-                "Corporate Relocation",
+
                 "Office Moving",
                 "Local Moving in Dubai",
                 "Packing Services",
@@ -51,6 +64,7 @@ const DesktopNavbar = () => {
               ]}
             />
             <NavItem
+              links={locationsLinks}
               title="LOCATIONS"
               dropdownItems={[
                 "Movers in Dubai",
@@ -60,6 +74,7 @@ const DesktopNavbar = () => {
               ]}
             />
             <NavItem
+              links={companyLinks}
               title="COMPANY"
               dropdownItems={["About Us", "Contact Us", "Resources"]}
             />
@@ -73,6 +88,7 @@ const DesktopNavbar = () => {
               </Link>
             </li>
             <NavItem
+              links={othersLinks}
               title="MORE"
               dropdownItems={[
                 "FAQS",
@@ -95,35 +111,57 @@ const DesktopNavbar = () => {
             </label>
             <ul className="hidden peer-checked:block absolute top-10 bg-accent w-72 p-4 rounded-2xl drop-shadow-xl right-0">
               <div className="bg-white p-2 flex items-center justify-between rounded-lg">
-                <p>+92 3471309916</p>
+                <p>+971 55 6461731</p>
                 <div className="flex gap-x-2">
-                  <div className="cursor-pointer w-9 rounded-4xl h-9 border flex items-center justify-center">
-                    <LucidePhoneCall className="text-gray-500 w-5 h-5" />
-                  </div>
-                  <div className="cursor-pointer w-9 rounded-4xl h-9 border flex items-center justify-center">
-                    <MessageCircleMoreIcon className="text-gray-500 w-5 h-5" />
-                  </div>
+                  <Link title="Call" href={"tel:+971556461731"}>
+                    <div className="cursor-pointer w-9 rounded-4xl h-9 border flex items-center justify-center">
+                      <LucidePhoneCall className="text-gray-500 w-5 h-5" />
+                    </div>
+                  </Link>
+                  <Link
+                    href={
+                      "https://wa.me/+971556461731?text=I%20am%20looking%20for%20movers%20!"
+                    }
+                    title="WhatsApp"
+                  >
+                    <div className="cursor-pointer w-9 rounded-4xl h-9 border flex items-center justify-center">
+                      <MessageCircleMoreIcon className="text-gray-500 w-5 h-5" />
+                    </div>
+                  </Link>
                 </div>
               </div>
               <div className="bg-white p-2 flex items-center justify-between rounded-lg mt-3">
-                <p>+92 3471309916</p>
+                <p>+971 56 7878464</p>
                 <div className="flex gap-x-2">
-                  <div className="cursor-pointer w-9 rounded-4xl h-9 border flex items-center justify-center">
-                    <LucidePhoneCall className="text-gray-500 w-5 h-5" />
-                  </div>
-                  <div className="cursor-pointer w-9 rounded-4xl h-9 border flex items-center justify-center">
-                    <MessageCircleMoreIcon className="text-gray-500 w-5 h-5" />
-                  </div>
+                  <Link title="Call" href={"tel:+971556461731"}>
+                    <div className="cursor-pointer w-9 rounded-4xl h-9 border flex items-center justify-center">
+                      <LucidePhoneCall className="text-gray-500 w-5 h-5" />
+                    </div>
+                  </Link>
+                  <Link
+                    title="WhatsApp"
+                    href={
+                      "https://wa.me/+971567878464?text=I%20am%20looking%20for%20movers%20!"
+                    }
+                  >
+                    <div className="cursor-pointer w-9 rounded-4xl h-9 border flex items-center justify-center">
+                      <MessageCircleMoreIcon className="text-gray-500 w-5 h-5" />
+                    </div>
+                  </Link>
                 </div>
               </div>
               <div className="w-full h-11 mt-3 flex items-center gap-x-3 text-muted justify-between">
-                <Button variant={"link"}>
-                  Free Quote <ListChecks />
-                </Button>
-                <Button variant={"link"}>
-                  Send Mail
-                  <Send />
-                </Button>
+                <Link href={"/contact-us"}>
+                  <Button variant={"link"}>
+                    Free Quote <ListChecks />
+                  </Button>
+                </Link>
+                <Link href={"mailto:abumuhammad.movers@gmail.com"}>
+                  <Button variant={"link"}>
+                    Send Mail
+                    <Send />
+                  </Button>
+                </Link>
               </div>
             </ul>
           </div>
@@ -138,9 +176,10 @@ export default DesktopNavbar;
 function NavItem({
   title,
   dropdownItems,
+  links,
 }: {
   title: string;
-
+  links: string[];
   dropdownItems: string[];
 }) {
   return (
@@ -160,7 +199,7 @@ function NavItem({
             key={index}
             className="px-4 py-2.5 hover:bg-white rounded-lg text-sm border-b"
           >
-            <Link href="#">{item}</Link>
+            <Link href={links[index]}>{item}</Link>
           </li>
         ))}
       </ul>

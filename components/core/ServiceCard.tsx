@@ -28,6 +28,7 @@ const ServiceCard = ({
       </p>
       <div>
         <a
+          title={`more details about ${item.title}`}
           href={item.link}
           className="text-slate-800 font-semibold text-sm hover:underline flex items-center"
         >
