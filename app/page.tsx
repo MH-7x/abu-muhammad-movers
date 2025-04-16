@@ -1,27 +1,19 @@
 import Content from "@/components/Content";
 import CTA from "@/components/core/CTA";
-import ServiceCard from "@/components/core/ServiceCard";
+
 import { Button } from "@/components/ui/button";
 import {
   BadgeDollarSignIcon,
-  Building2Icon,
-  Drill,
   FileCheck2Icon,
   FileCheckIcon,
   HandshakeIcon,
-  HomeIcon,
   LucideUsers2,
-  MapPinnedIcon,
   MedalIcon,
   MessageCircleMore,
-  MoreHorizontal,
-  PackageCheckIcon,
-  Piano,
   Send,
   ShieldCheckIcon,
   TruckIcon,
   UsersRoundIcon,
-  Warehouse,
 } from "lucide-react";
 import Image from "next/image";
 import FAQs from "../components/core/FAQs";
@@ -107,10 +99,9 @@ export default function Home() {
                 <select
                   className="text-primary p-3 md:p-4 rounded-lg border border-[#ECD920] bg-gray-200"
                   name="moving-from "
+                  defaultValue={""}
                 >
-                  <option selected disabled>
-                    Moving From?
-                  </option>
+                  <option disabled>Moving From?</option>
                   <option value="Dubai">Dubai</option>
                   <option value="Sharjah">Sharjah</option>
                   <option value="Abu Dhabi">Abu Dhabi</option>
@@ -119,10 +110,9 @@ export default function Home() {
                 <select
                   className="text-primary p-3 md:p-4 rounded-lg border border-[#ECD920] bg-gray-200"
                   name="moving-to"
+                  defaultValue={""}
                 >
-                  <option selected disabled>
-                    Moving From?
-                  </option>
+                  <option disabled>Moving From?</option>
                   <option value="Dubai">Dubai</option>
                   <option value="Sharjah">Sharjah</option>
                   <option value="Abu Dhabi">Abu Dhabi</option>
@@ -236,8 +226,8 @@ export default function Home() {
             cost compared to other cheap movers in Dubai.
           </p>
           <p className="md:text-xl text-base mt-2 max-w-4xl text-muted-foreground">
-            Whether you're looking for villa movers in Dubai, office movers in
-            Dubai, or house movers in Dubai, we've got you covered.
+            Whether you&#39;re looking for villa movers in Dubai, office movers
+            in Dubai, or house movers in Dubai, we&#39;ve got you covered.
           </p>
         </section>
         <section className="con mt-36 md:px-0 px-3 grid md:grid-cols-2 grid-cols-1 items-center md:gap-x-10 gap-y-10">
@@ -396,9 +386,9 @@ export default function Home() {
                 1. Book Your Service
               </h3>
               <p className="text-muted-foreground mt-2 text-center text-sm">
-                Get started with a simple call or meet-up. We'll discuss your
-                moving service needs and organize everything for a stress-free
-                experience.
+                Get started with a simple call or meet-up. We&#39;ll discuss
+                your moving service needs and organize everything for a
+                stress-free experience.
               </p>
             </div>
 
@@ -518,9 +508,9 @@ export default function Home() {
           </h2>
           <p className="text-gray-600 mt-3">
             Since 2010, Abu Muhammad Movers has been a reliable name for
-            furniture moving services in Dubai. We understand that moving isn't
-            always straightforward—your new place might not be ready, or
-            renovations may be ongoing.
+            furniture moving services in Dubai. We understand that moving
+            isn&#39;t always straightforward—your new place might not be ready,
+            or renovations may be ongoing.
           </p>
           <p className="text-gray-600 mt-3">
             That’s why we combine professional removal services with secure

@@ -11,14 +11,14 @@ const Footer = () => {
           <div className="md:-mx-4 -mx-2 flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
               <div className="mb-10 w-full">
-                <a href="/#" className="mb-6 inline-block max-w-[160px]">
+                <Link href="/" className="mb-6 inline-block max-w-[160px]">
                   <Image
                     src={"/logo.png"}
                     width={160}
                     height={160}
                     alt="Abu Muhammad Movers Logo"
                   />
-                </a>
+                </Link>
                 <p className="mb-7 text-base text-body-color dark:text-dark-6">
                   Abu Muhammad Movers is a best moving company in Dubai, UAE,
                   that has been offering services since 2010 with a trained team
