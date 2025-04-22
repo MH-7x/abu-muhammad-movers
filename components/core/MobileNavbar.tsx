@@ -141,7 +141,7 @@ const Sidebar = () => {
             list={[
               {
                 title: "Home Moving",
-                link: "/home-moving",
+                link: "/home-moving-dubai",
               },
 
               {

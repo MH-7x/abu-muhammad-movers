@@ -64,7 +64,7 @@ const Footer = () => {
             </div>
 
             <LinkGroup header="SERVICES">
-              <NavLink link="/home-moving" label="Home Moving" />
+              <NavLink link="/home-moving-dubai" label="Home Moving" />
               <NavLink link="/office-moving" label="Office Relocation" />
               <NavLink
                 link="/local-moving-in-dubai"

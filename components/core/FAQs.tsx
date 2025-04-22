@@ -1,9 +1,11 @@
+import { ReactNode } from "react";
+
 function FAQs({
   Faqs,
 }: {
   Faqs: {
     question: string;
-    answer: string;
+    answer: string | ReactNode;
   }[];
 }) {
   return (

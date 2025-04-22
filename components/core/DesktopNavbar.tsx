@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 import Image from "next/image";
 
 export const servicesLinks = [
-  "/home-moving",
+  "/home-moving-dubai",
   "/office-moving",
   "/local-moving-in-dubai",
   "/packing-services",

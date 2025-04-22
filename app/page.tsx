@@ -627,7 +627,12 @@ export default function Home() {
             pricing.
           </p>
         </section>
-        <CTA />
+        <CTA
+          title="Get Your Free, No-Obligation Moving Quote Today!"
+          desc="Contact Abu Muhammad Movers now for a personalized quote and
+            experience a stress-free move with one of the leading movers and
+            packers in Dubai."
+        />
         <FAQs
           Faqs={[
             {

@@ -26,7 +26,7 @@ const ServiceCard = ({
       <p className="block text-slate-500 leading-normal mb-4">
         {item.description}
       </p>
-      <div>
+      <div> 
         <a
           title={`more details about ${item.title}`}
           href={item.link}
