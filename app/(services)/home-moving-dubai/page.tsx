@@ -1,18 +1,16 @@
 import { Areas } from "@/components/core/Areas";
 import CTA from "@/components/core/CTA";
 import FAQs from "@/components/core/FAQs";
-import Card from "@/components/core/ImgCard";
+
 import ServiceHeroSection from "@/components/core/ServiceHeroSection";
 import TestimonialSlider from "@/components/core/TestimonialsSlider";
 import { Button } from "@/components/ui/button";
 import {
   BadgeDollarSignIcon,
   HandshakeIcon,
-  ListCheckIcon,
   MedalIcon,
   NotebookPenIcon,
   PhoneCall,
-  ShieldCheckIcon,
   TruckIcon,
 } from "lucide-react";
 import Image from "next/image";
@@ -53,9 +51,9 @@ const HomeMovingDubaiPage = () => {
             in Dubai tailored to your specific needs.
           </p>
           <p className="mt-3 text-muted-foreground">
-            Whether you're relocating a studio apartment, a sprawling villa, or
-            a compact office, our expert team is equipped to handle every aspect
-            of your move.
+            Whether you&#39;re relocating a studio apartment, a sprawling villa,
+            or a compact office, our expert team is equipped to handle every
+            aspect of your move.
           </p>
           <p className="mt-3 text-muted-foreground">
             Choose Abu Muhammad Movers for a smooth, efficient, and worry-free
@@ -75,10 +73,11 @@ const HomeMovingDubaiPage = () => {
       </section>
       <section className="md:px-0 px-3 max-w-5xl mx-auto text-xl flex flex-col gap-y-5 text-gray-600 mt-36">
         <p>
-          Moving home can be one of life's most significant events, filled with
-          both excitement and challenges. The prospect of a new beginning in a
-          new space is exhilarating, yet the process of packing, organizing, and
-          physically moving your belongings can feel overwhelming.
+          Moving home can be one of life&#39;s most significant events, filled
+          with both excitement and challenges. The prospect of a new beginning
+          in a new space is exhilarating, yet the process of packing,
+          organizing, and physically moving your belongings can feel
+          overwhelming.
         </p>
         <p>
           This is where Abu Muhammad Movers steps in – your trusted partner for
@@ -90,8 +89,8 @@ const HomeMovingDubaiPage = () => {
           professionalism, and unparalleled customer care.
         </p>
         <p>
-          We understand that we're not just moving boxes; we're moving your
-          life, your memories, and your most cherished possessions.
+          We understand that we&#39;re not just moving boxes; we&#39;re moving
+          your life, your memories, and your most cherished possessions.
         </p>
       </section>
       <section className="con mt-36 md:px-0 px-3">
@@ -262,7 +261,7 @@ const HomeMovingDubaiPage = () => {
               Apartment Moving Services in Dubai
             </h3>
             <p className="text-gray-600">
-              Whether you're moving from or to a cozy studio apartment or a
+              Whether you&#39;re moving from or to a cozy studio apartment or a
               spacious penthouse, our apartment moving services in Dubai are
               tailored to suit all sizes.
             </p>
@@ -294,8 +293,9 @@ const HomeMovingDubaiPage = () => {
               </h3>
             </Link>
             <p className="text-gray-600">
-              Relocating an office, whether it's a small home office or a larger
-              corporate space, requires careful planning to minimize downtime.
+              Relocating an office, whether it&#39;s a small home office or a
+              larger corporate space, requires careful planning to minimize
+              downtime.
             </p>
             <p className="text-gray-600 mt-2">
               Our office movers in Dubai are adept at efficiently packing and
@@ -371,8 +371,8 @@ const HomeMovingDubaiPage = () => {
               </h3>{" "}
             </Link>
             <p className="text-gray-600">
-              If your new home isn't ready or you need temporary storage during
-              your move, we offer secure storage services in Dubai.
+              If your new home isn&#39;t ready or you need temporary storage
+              during your move, we offer secure storage services in Dubai.
             </p>
             <p className="text-gray-600 mt-2">
               Our storage solutions provide a safe and climate-controlled
@@ -557,8 +557,8 @@ const HomeMovingDubaiPage = () => {
                 Moving Large Furniture within Dubai
               </h3>
               <p className="text-gray-600 text-base/5">
-                Even if you're not moving homes but need to relocate large or
-                heavy furniture within your current residence.
+                Even if you&#39;re not moving homes but need to relocate large
+                or heavy furniture within your current residence.
               </p>
               <p className="text-gray-600 text-base/5 mt-2">
                 our team can provide the muscle and expertise to move items
@@ -589,8 +589,8 @@ const HomeMovingDubaiPage = () => {
         <ol className="mt-5 grid md:grid-cols-2 grid-cols-1 gap-4 list-decimal list-inside text-gray-600">
           <li className="bg-secondary/50 p-3 rounded-2xl">
             <strong> Initial Consultation:</strong> Contact us to discuss your
-            moving needs. We'll provide a free consultation and answer all your
-            questions.
+            moving needs. We&#39;ll provide a free consultation and answer all
+            your questions.
           </li>
           <li className="bg-secondary/50 p-3 rounded-2xl">
             <strong>Pre-Move Assessment:</strong> For larger moves, we conduct
@@ -828,8 +828,8 @@ const HomeMovingDubaiPage = () => {
                 >
                   contact form on our website
                 </Link>
-                . We'll gather details about your move and provide a detailed
-                estimate.{" "}
+                . We&#39;ll gather details about your move and provide a
+                detailed estimate.{" "}
               </>
             ),
           },

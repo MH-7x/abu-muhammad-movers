@@ -115,7 +115,7 @@ export function Areas() {
         </div>
         <p className="max-w-4xl mx-auto text-center text-gray-600 mt-5">
           Our familiarity with the logistics and regulations in these areas
-          ensures a smooth moving process, no matter where you're relocating
+          ensures a smooth moving process, no matter where you&#39;re relocating
           within Dubai.
         </p>
       </div>
