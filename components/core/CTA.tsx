@@ -1,8 +1,16 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-const CTA = ({ title, desc }: { title: string; desc: string }) => {
+const CTA = ({
+  title,
+  desc,
+  extra,
+}: {
+  title: string;
+  desc: string;
+  extra?: ReactNode;
+}) => {
   return (
     <section className="py-16 px-3 mt-36 bg-[#ECD920]">
       <div className="max-w-xl mx-auto text-center">
@@ -12,6 +20,7 @@ const CTA = ({ title, desc }: { title: string; desc: string }) => {
         <div className="mt-12">
           <p className="text-slate-600 text-base">{desc}</p>
         </div>
+        {extra && <div className="mt-5">{extra}</div>}
         <div className="flex gap-x-4 mt-5 justify-center">
           <Link href="/contact-us">
             <Button size={"lg"}>
