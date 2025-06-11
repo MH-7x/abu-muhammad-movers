@@ -10,7 +10,6 @@ import {
   LucideUsers2,
   MedalIcon,
   MessageCircleMore,
-  Send,
   ShieldCheckIcon,
   TruckIcon,
   UsersRoundIcon,
