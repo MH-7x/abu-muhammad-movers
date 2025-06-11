@@ -16,6 +16,29 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import type { Metadata } from "next";
+import { APP } from "@/lib/constants";
+export const metadata: Metadata = {
+  title: "Home Movers And Packers Dubai | Affordable House Shifting Services",
+  description:
+    "Are you looking for movers that will relocation you home within dubai or beyond dubai at best price, look no further than Abu Muhammad Movers, leading and best house shifting company in dubai. Contact us now!",
+  alternates: {
+    canonical: `${APP.url}/home-moving-dubai`,
+  },
+  openGraph: {
+    title: "Home Movers And Packers Dubai | Affordable House Shifting Services",
+    description:
+      "Are you looking for movers that will relocation you home within dubai or beyond dubai at best price, look no further than Abu Muhammad Movers, leading and best house shifting company in dubai. Contact us now!",
+    images: [`${APP.url}/home-moving-dubai`],
+    url: `${APP.url}/home-moving-dubai`,
+  },
+  twitter: {
+    title: "Home Movers And Packers Dubai | Affordable House Shifting Services",
+    description:
+      "Are you looking for movers that will relocation you home within dubai or beyond dubai at best price, look no further than Abu Muhammad Movers, leading and best house shifting company in dubai. Contact us now!",
+    images: [`${APP.url}/home-moving-dubai`],
+  },
+};
 
 const HomeMovingDubaiPage = () => {
   return (

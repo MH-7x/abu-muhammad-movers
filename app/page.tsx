@@ -20,6 +20,8 @@ import FAQs from "../components/core/FAQs";
 import Link from "next/link";
 import Services from "@/components/core/Services";
 import { LocationCard } from "@/components/core/LocationCards";
+import type { Metadata } from "next";
+import { APP } from "@/lib/constants";
 
 const locations = [
   {
@@ -47,6 +49,28 @@ const locations = [
     link: "/movers-in-ajman",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Movers And Packers Dubai | Abu Muhammad Movers",
+  description:
+    "Abu Muhammad Movers is a leading and the best home movers and packers in UAE. We provide professional house shifting service & other moving services in UAE. Request a quote or contact us today.",
+  alternates: {
+    canonical: APP.url,
+  },
+  openGraph: {
+    title: "Movers And Packers Dubai | Abu Muhammad Movers",
+    description:
+      "Abu Muhammad Movers is a leading and the best home movers and packers in UAE. We provide professional house shifting service & other moving services in UAE. Request a quote or contact us today.",
+    images: [`${APP.url}/images/abu-muhammad-movers.jpg`],
+    url: APP.url,
+  },
+  twitter: {
+    title: "Movers And Packers Dubai | Abu Muhammad Movers",
+    description:
+      "Abu Muhammad Movers is a leading and the best home movers and packers in UAE. We provide professional house shifting service & other moving services in UAE. Request a quote or contact us today.",
+    images: [`${APP.url}/images/abu-muhammad-movers.jpg`],
+  },
+};
 
 export default function Home() {
   return (

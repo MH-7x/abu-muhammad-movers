@@ -36,14 +36,14 @@ const DesktopNavbar = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50">
       <nav className="w-11/12 mx-auto flex items-center bg-white/95 py-3 px-6 mt-3 rounded-4xl drop-shadow-xl justify-between">
-        <Link href={"/"} className="">
+        <Link href={"/"} className="h-16 w-56 relative overflow-hidden">
           <Image
             src={"/logo.png"}
             alt="Abu Muhammad Movers LOGO"
-            width={200}
+            fill
+            className="object-contain object-center absolute"
             loading="eager"
             priority
-            height={200}
           />
         </Link>
         <div className="flex items-center gap-x-10">
