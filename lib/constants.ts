@@ -1,5 +1,3 @@
 export const APP = {
-  url: process.env.NODE_ENV
-    ? "http://localhost:3000"
-    : "https://abumuhammadmovers.online",
+  url: process.env.APP_URL || "http://localhost:3000",
 };
