@@ -2,6 +2,7 @@ import { Send } from "lucide-react";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import ContactForm from "./ContactForm";
 
 const ServiceHeroSection = ({
   title,
@@ -47,7 +48,7 @@ const ServiceHeroSection = ({
                 {description}
               </p>
               <Link
-                href="/"
+                href="https://wa.me/+971556461731?text=I%20am%20looking%20for%20movers%20!"
                 aria-label="Whatsapp Us"
                 className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-[#ecd920]"
               >
@@ -61,7 +62,7 @@ const ServiceHeroSection = ({
                 </svg>
               </Link>
               <Link
-                href="/"
+                href="tel:+971556461731"
                 aria-label="Call To Us"
                 className="inline-flex items-center ml-5 font-semibold tracking-wider transition-colors duration-200 text-[#ecd920]"
               >
@@ -75,63 +76,7 @@ const ServiceHeroSection = ({
                 </svg>
               </Link>
             </div>
-            <div className="bg-gradient-to-r from-primary to-[#1c1716] min-h-96 rounded-4xl md:p-8 p-5 w-full max-w-xl xl:w-5/12">
-              <h3 className="text-2xl text-[#ECD920] text-center">
-                Get A Free Quote
-              </h3>
-              <form className="mt-5 text-primary-foreground flex flex-col gap-y-4">
-                <input
-                  name="customer-name"
-                  placeholder="Your Name.."
-                  type="text"
-                  required
-                  className="bg-gray-200 placeholder:text-muted-foreground text-primary p-3 md:p-4 rounded-lg border border-[#ECD920]"
-                />
-                <input
-                  name="phone-number"
-                  placeholder="Phone Number.."
-                  type="number"
-                  required
-                  className="bg-gray-200 placeholder:text-muted-foreground text-primary p-3 md:p-4 rounded-lg border border-[#ECD920]"
-                />
-                <div className="grid grid-cols-2 gap-x-4">
-                  <select
-                    className="text-primary p-3 md:p-4 rounded-lg border border-[#ECD920] bg-gray-200"
-                    name="moving-from "
-                    defaultValue={""}
-                  >
-                    <option disabled>Moving From?</option>
-                    <option value="Dubai">Dubai</option>
-                    <option value="Sharjah">Sharjah</option>
-                    <option value="Abu Dhabi">Abu Dhabi</option>
-                    <option value="Ajman">Ajman</option>
-                  </select>
-                  <select
-                    className="text-primary p-3 md:p-4 rounded-lg border border-[#ECD920] bg-gray-200"
-                    name="moving-to"
-                    defaultValue={""}
-                  >
-                    <option disabled>Moving From?</option>
-                    <option value="Dubai">Dubai</option>
-                    <option value="Sharjah">Sharjah</option>
-                    <option value="Abu Dhabi">Abu Dhabi</option>
-                    <option value="Ajman">Ajman</option>
-                  </select>
-                </div>
-                <textarea
-                  name="message"
-                  placeholder="Your Message.."
-                  className="bg-gray-200 placeholder:text-muted-foreground text-primary p-3 md:p-4 rounded-lg border border-[#ECD920] min-h-32"
-                ></textarea>
-                <Button
-                  type="submit"
-                  className="w-full bg-[#ECD920] text-primary hover:bg-[#ecd720d5]"
-                  size={"lg"}
-                >
-                  SEND NOW <Send />
-                </Button>
-              </form>
-            </div>
+            <ContactForm />
           </div>
         </div>
       </div>

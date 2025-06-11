@@ -18,6 +18,7 @@ import Link from "next/link";
 import React from "react";
 import type { Metadata } from "next";
 import { APP } from "@/lib/constants";
+
 export const metadata: Metadata = {
   title: "Home Movers And Packers Dubai | Affordable House Shifting Services",
   description:

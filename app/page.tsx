@@ -22,6 +22,7 @@ import Services from "@/components/core/Services";
 import { LocationCard } from "@/components/core/LocationCards";
 import type { Metadata } from "next";
 import { APP } from "@/lib/constants";
+import ContactForm from "@/components/core/ContactForm";
 
 const locations = [
   {
@@ -100,63 +101,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="bg-gradient-to-r from-primary to-[#1c1716] min-h-96 md:ml-16 rounded-4xl md:p-8 p-5">
-            <h3 className="text-2xl text-[#ECD920] text-center">
-              Get A Free Quote
-            </h3>
-            <form className="mt-5 text-primary-foreground flex flex-col gap-y-4">
-              <input
-                name="customer-name"
-                placeholder="Your Name.."
-                type="text"
-                required
-                className="bg-gray-200 placeholder:text-muted-foreground text-primary p-3 md:p-4 rounded-lg border border-[#ECD920]"
-              />
-              <input
-                name="phone-number"
-                placeholder="Phone Number.."
-                type="number"
-                required
-                className="bg-gray-200 placeholder:text-muted-foreground text-primary p-3 md:p-4 rounded-lg border border-[#ECD920]"
-              />
-              <div className="grid grid-cols-2 gap-x-4">
-                <select
-                  className="text-primary p-3 md:p-4 rounded-lg border border-[#ECD920] bg-gray-200"
-                  name="moving-from "
-                  defaultValue={""}
-                >
-                  <option disabled>Moving From?</option>
-                  <option value="Dubai">Dubai</option>
-                  <option value="Sharjah">Sharjah</option>
-                  <option value="Abu Dhabi">Abu Dhabi</option>
-                  <option value="Ajman">Ajman</option>
-                </select>
-                <select
-                  className="text-primary p-3 md:p-4 rounded-lg border border-[#ECD920] bg-gray-200"
-                  name="moving-to"
-                  defaultValue={""}
-                >
-                  <option disabled>Moving From?</option>
-                  <option value="Dubai">Dubai</option>
-                  <option value="Sharjah">Sharjah</option>
-                  <option value="Abu Dhabi">Abu Dhabi</option>
-                  <option value="Ajman">Ajman</option>
-                </select>
-              </div>
-              <textarea
-                name="message"
-                placeholder="Your Message.."
-                className="bg-gray-200 placeholder:text-muted-foreground text-primary p-3 md:p-4 rounded-lg border border-[#ECD920] min-h-32"
-              ></textarea>
-              <Button
-                type="submit"
-                className="w-full bg-[#ECD920] text-primary hover:bg-[#ecd720d5]"
-                size={"lg"}
-              >
-                SEND NOW <Send />
-              </Button>
-            </form>
-          </div>
+          <ContactForm forHome={true} />
         </section>
         <section className="con mt-36 md:px-0 px-3">
           <h2 className="md:text-4xl text-3xl font-semibold md:leading-12 leading-[38px]">

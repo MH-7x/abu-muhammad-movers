@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/core/Navbar";
 import Footer from "@/components/core/Footer";
 import { Poppins } from "next/font/google";
+import { Toaster } from "@/components/ui/sonner";
+
 export const metadata: Metadata = {
   applicationName: "Abu Muhammad Movers",
   robots: {
@@ -47,7 +49,7 @@ export default function RootLayout({
       <body className={`${poppins.className} antialiased`}>
         <Navbar />
         {children}
-        <Footer />
+        <Toaster position="bottom-center" /> <Footer />
       </body>
     </html>
   );
