@@ -23,7 +23,7 @@ import type { Metadata } from "next";
 import { APP } from "@/lib/constants";
 import ContactForm from "@/components/core/ContactForm";
 
-const locations = [
+export const locations = [
   {
     city: "Movers in Dubai",
     description:
