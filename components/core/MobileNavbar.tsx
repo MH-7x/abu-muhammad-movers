@@ -81,7 +81,7 @@ const MobileNavbar = () => {
                 </div>
               </div>
               <div className="w-full h-11 mt-3 flex items-center gap-x-3 text-muted justify-between">
-                <Link href={"/contact-us"}>
+                <Link href={"/book-movers-online"}>
                   <Button variant={"link"}>
                     Free Quote <ListChecks />
                   </Button>
@@ -224,7 +224,7 @@ const Sidebar = () => {
               },
               {
                 title: "Contact Us",
-                link: "/contact-us",
+                link: "/book-movers-online",
               },
               {
                 title: "Resources",

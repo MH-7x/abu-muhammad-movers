@@ -88,7 +88,7 @@ export default function Home() {
               UAE.
             </p>
             <div className="mt-5 flex gap-x-5">
-              <Link href={"/contact-us"}>
+              <Link href={"/book-movers-online"}>
                 <Button size={"lg"}>
                   Get A Free Quote <FileCheckIcon />
                 </Button>
@@ -277,7 +277,7 @@ export default function Home() {
               efficiency.
             </p>
             <div className="mt-4 flex space-x-4">
-              <Link href={"/contact-us"}>
+              <Link href={"/book-movers-online"}>
                 <Button>
                   Get A Free Quote <FileCheck2Icon />
                 </Button>

@@ -1,6 +1,5 @@
-import ContactForm from "@/components/core/ContactForm";
 import { Button } from "@/components/ui/button";
-import { Contact, MessageCircleMore } from "lucide-react";
+import { MessageCircleMore } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";

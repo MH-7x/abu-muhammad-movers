@@ -25,7 +25,7 @@ import {
   MessageCircleMoreIcon,
   Send,
 } from "lucide-react";
-export const companyLinks = ["/about-us", "/contact-us", "/resources"];
+export const companyLinks = ["/about-us", "/book-movers-online", "/resources"];
 export const othersLinks = [
   "/faqs",
   "/gallery",
@@ -151,7 +151,7 @@ const DesktopNavbar = () => {
                 </div>
               </div>
               <div className="w-full h-11 mt-3 flex items-center gap-x-3 text-muted justify-between">
-                <Link href={"/contact-us"}>
+                <Link href={"/book-movers-online"}>
                   <Button variant={"link"}>
                     Free Quote <ListChecks />
                   </Button>

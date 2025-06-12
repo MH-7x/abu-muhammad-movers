@@ -848,7 +848,7 @@ const HomeMovingDubaiPage = () => {
                 , or by filling out the{" "}
                 <Link
                   className="underline underline-offset-2"
-                  href={"/contact-us"}
+                  href={"/book-movers-online"}
                 >
                   contact form on our website
                 </Link>

@@ -22,7 +22,7 @@ const CTA = ({
         </div>
         {extra && <div className="mt-5">{extra}</div>}
         <div className="flex gap-x-4 mt-5 justify-center">
-          <Link href="/contact-us">
+          <Link href="/book-movers-online">
             <Button size={"lg"}>
               Get A Free Quote <ArrowRight />
             </Button>

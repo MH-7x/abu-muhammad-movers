@@ -96,7 +96,7 @@ const Footer = () => {
             </LinkGroup>
             <LinkGroup header="Useful Links">
               <NavLink link="/about-us" label="About Us" />
-              <NavLink link="/contact-us" label="Contact Us" />
+              <NavLink link="/book-movers-online" label="Contact Us" />
               <NavLink link="/faqs" label="faqs" />
               <NavLink link="/sitemap" label="Sitemap" />
               <NavLink link="/gallery" label="Gallery" />
