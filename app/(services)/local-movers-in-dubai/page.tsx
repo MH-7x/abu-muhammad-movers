@@ -17,19 +17,22 @@ import CTA from "@/components/core/CTA";
 
 export const metadata: Metadata = {
   title: "Trusted Local Movers in Dubai | Abu Muhammad Movers",
-  description: "",
+  description:
+    "Trusted local movers in Dubai. Affordable, same-day moving, packing, and storage by Abu Muhammad Mover. Call now for a free quote and stress-free service.",
   alternates: {
     canonical: `${APP.url}/local-movers-in-dubai`,
   },
   openGraph: {
     title: "Trusted Local Movers in Dubai | Abu Muhammad Movers ",
-    description: "",
+    description:
+      "Trusted local movers in Dubai. Affordable, same-day moving, packing, and storage by Abu Muhammad Mover. Call now for a free quote and stress-free service.",
     url: `${APP.url}/local-movers-in-dubai`,
     images: `${APP.url}/local/abu-muhammad-movers-dubai-truck.jpg`,
   },
   twitter: {
     title: "Trusted Local Movers in Dubai | Abu Muhammad Movers ",
-    description: "",
+    description:
+      "Trusted local movers in Dubai. Affordable, same-day moving, packing, and storage by Abu Muhammad Mover. Call now for a free quote and stress-free service.",
     card: "summary_large_image",
     images: `${APP.url}/local/abu-muhammad-movers-dubai-truck.jpg`,
   },
