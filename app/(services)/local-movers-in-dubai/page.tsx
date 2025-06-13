@@ -12,7 +12,6 @@ import {
 } from "lucide-react";
 import { Areas } from "@/components/core/Areas";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import TestimonialSlider from "@/components/core/TestimonialsSlider";
 import CTA from "@/components/core/CTA";
 
@@ -26,13 +25,13 @@ export const metadata: Metadata = {
     title: "Trusted Local Movers in Dubai | Abu Muhammad Movers ",
     description: "",
     url: `${APP.url}/local-movers-in-dubai`,
-    images: "",
+    images: `${APP.url}/local/abu-muhammad-movers-dubai-truck.jpg`,
   },
   twitter: {
     title: "Trusted Local Movers in Dubai | Abu Muhammad Movers ",
     description: "",
     card: "summary_large_image",
-    images: "",
+    images: `${APP.url}/local/abu-muhammad-movers-dubai-truck.jpg`,
   },
 };
 const LocalMoversInDubaiPage = () => {
