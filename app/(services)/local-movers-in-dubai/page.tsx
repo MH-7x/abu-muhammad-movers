@@ -14,6 +14,7 @@ import { Areas } from "@/components/core/Areas";
 import Image from "next/image";
 import TestimonialSlider from "@/components/core/TestimonialsSlider";
 import CTA from "@/components/core/CTA";
+import FAQs from "@/components/core/FAQs";
 
 export const metadata: Metadata = {
   title: "Trusted Local Movers in Dubai | Abu Muhammad Movers",
@@ -651,6 +652,263 @@ const LocalMoversInDubaiPage = () => {
             </p>
           </>
         }
+      />
+      <FAQs
+        Faqs={[
+          {
+            question:
+              "How much do movers cost in Dubai for a 1‑bedroom apartment?",
+            answer: (
+              <>
+                You can expect to pay AED 1,100–1,500 for a standard 1‑bedroom
+                move within Dubai. Prices vary with distance, volume of items,
+                and add‑on services like packing or storage, so it’s best to
+                request a tailored quote.{" "}
+              </>
+            ),
+          },
+          {
+            question:
+              "Which is the best moving company in Dubai for local moves?",
+            answer: (
+              <>
+                Among top‑ranked providers,{" "}
+                <Link href={"/"}>Abu Muhammad Movers</Link>,{" "}
+                <Link
+                  rel="noopener noreferrer"
+                  href={"https://iss-relocations.com/"}
+                >
+                  ISS Relocations
+                </Link>{" "}
+                ,
+                <Link
+                  rel="noopener noreferrer"
+                  href={"https://www.crownrelo.com/"}
+                >
+                  Crown Relocations
+                </Link>{" "}
+                , and{" "}
+                <Link
+                  rel="noopener noreferrer"
+                  href={"https://bestforwardmovers.com/"}
+                >
+                  Forward Movers
+                </Link>{" "}
+                consistently earn 5‑star reviews for reliability, trained crews,
+                and full‑service offerings. As you compare, look for:
+                <ul className="list-disc list-inside mt-2">
+                  <li>Real customer testimonials</li>
+                  <li>Transparent pricing and clear service breakdowns</li>
+                  <li>A minimum 10+ years of local experience</li>
+                </ul>
+              </>
+            ),
+          },
+          {
+            question: "Do movers in Dubai provide packing materials and boxes?",
+            answer: (
+              <>
+                Yes—most reputable movers include bubble wrap, sturdy cartons,
+                packing tape, and protective blankets as part of an end‑to‑end
+                service. Some budget operators may charge extra, so always
+                confirm whether materials are “all‑inclusive.”
+              </>
+            ),
+          },
+          {
+            question: "How do I choose a reliable local mover in Dubai?",
+            answer: (
+              <>
+                Vet movers by:
+                <ol className="list-decimal list-inside mt-2">
+                  <li>Checking licensing (Dubai Municipality or DED)</li>
+                  <li>
+                    Reading ≥ 50 verified reviews on platforms like
+                    ServiceMarket and Abu Muhammad Movers
+                  </li>
+                  <li>
+                    Requesting a free on‑site survey for an accurate, written
+                    quote
+                  </li>
+                  <li>Confirming insurance and warranty coverage</li>
+                  <li>
+                    Comparing at least 3 quotes for service scope and hidden‑fee
+                    disclosures{" "}
+                  </li>
+                </ol>
+              </>
+            ),
+          },
+          {
+            question: "Are there licensed and insured movers in Dubai?",
+            answer: (
+              <>
+                Absolutely—top movers must be licensed by Dubai’s authorities
+                and typically offer “goods‑in‑transit” insurance. You can
+                compare insured, pre‑screened companies via portals like
+                ServiceMarket and <Link href={"/"}>Abu Muhammad Movers</Link>,{" "}
+                to ensure full liability coverage.
+              </>
+            ),
+          },
+          {
+            question: "Can I move on the same day with local movers in Dubai?",
+            answer: (
+              <>
+                Yes—several companies (e.g.{" "}
+                <Link href={"/"}>Abu Muhammad Movers</Link> and{" "}
+                <Link
+                  rel="noopener noreferrer"
+                  href={"https://dsmovers.ae/en/"}
+                >
+                  Dar Al Salam Movers
+                </Link>
+                ) advertise 24/7 on‑demand, same‑day service. Availability
+                depends on slot openings and crew capacity, and may incur a
+                10–20% urgency surcharge.
+              </>
+            ),
+          },
+          {
+            question: "What is included in a local moving service in Dubai?",
+            answer: (
+              <>
+                A full‑service local move generally covers:
+                <ul className="list-disc list-inside mt-2">
+                  <li>Pre‑move survey and written estimate</li>
+                  <li>Packing of all household items</li>
+                  <li>
+                    Loading, transport, unloading in climate‑controlled trucks
+                  </li>
+                  <li>Unpacking and basic furniture reassembly</li>
+                  <li>Disposal of packing debris</li>
+                  <li>Optionally, short‑term storage</li>
+                </ul>
+              </>
+            ),
+          },
+          {
+            question:
+              "Do local movers in Dubai handle furniture disassembly and reassembly?",
+            answer: (
+              <>
+                Yes—expert movers routinely dismantle beds, wardrobes, shelving,
+                then reassemble on‑site. This “white‑glove” service ensures
+                bulky items fit elevators and tight corridors safely.
+              </>
+            ),
+          },
+          {
+            question: "How early should I book local movers in Dubai?",
+            answer: (
+              <>
+                <ul className="list-disc list-inside mt-2">
+                  <li>Off‑peak, local moves: Book 2–4 weeks in advance</li>
+                  <li>
+                    Peak season (May–August) or weekends: aim for 4–6 weeks
+                    ahead
+                  </li>
+                  <li>
+                    Last‑minute: some movers take bookings with just 48 hours’
+                    notice, subject to availability
+                  </li>
+                </ul>
+              </>
+            ),
+          },
+          {
+            question: "Are there any hidden costs with movers in Dubai?",
+            answer: (
+              <>
+                Watch for extra fees for:
+                <ul className="list-disc list-inside mt-2">
+                  <li>Stair carries (beyond 3 flights)</li>
+                  <li>Long‑carry distances from door to truck</li>
+                  <li>Bulky or special‑care items (pianos, safes)</li>
+                  <li>Bulky or special‑care items (pianos, safes)</li>
+                  <li>Elevator permits or parking‑zone charges</li>
+                  <li>After‑hours or holiday surcharges </li>
+                </ul>
+              </>
+            ),
+          },
+          {
+            question:
+              "Can local movers in Dubai move within the same building?",
+            answer: (
+              <>
+                Yes—moving within the same block often operates at the lower end
+                of the pricing scale. Many movers offer a 25–30% discounted
+                local‑building rate if there’s no driving required.
+              </>
+            ),
+          },
+          {
+            question: "Do local movers in Dubai handle office relocations?",
+            answer: (
+              <>
+                Many specialize in both residential and commercial
+                moves—providing extra packaging for electronics, modular office
+                furniture disassembly, and secure data‑cable management.
+                Corporate customers can often schedule moves outside business
+                hours to minimize downtime.
+              </>
+            ),
+          },
+          {
+            question: "What is the cheapest way to hire local movers in Dubai?",
+            answer: (
+              <>
+                <ul className="list-disc list-inside mt-2">
+                  <li>Self‑pack your non‑fragile items</li>
+                  <li>Move off‑peak (October–April)</li>
+                  <li>Compare ⩾ 3 quotes via aggregators</li>
+                  <li>
+                    Opt for bare‑bones transport only if you can handle
+                    loading/unloading
+                  </li>
+                  <li>
+                    Beware “too good to be true” rates—hidden fees often nullify
+                    upfront savings.{" "}
+                  </li>
+                </ul>
+              </>
+            ),
+          },
+          {
+            question:
+              "Are there any local movers in Dubai with storage options?",
+            answer: (
+              <>
+                es—providers like Easytruck and Forward Movers offer
+                air‑conditioned warehouse pods for both short‑ and long‑term
+                storage, with door‑to‑door pickup and return.
+              </>
+            ),
+          },
+          {
+            question:
+              "How long does it take for local movers in Dubai to complete a move?",
+            answer: (
+              <>
+                A typical 1‑bedroom apartment relocation takes 3–6 hours
+                door‑to‑door. Larger homes may require a full day or split into
+                multiple visits if storage is involved.
+              </>
+            ),
+          },
+          {
+            question: "Can I book local movers in Dubai online?",
+            answer: (
+              <>
+                Yes—most leading movers (including Abu Muhammad Movers,
+                ServiceMarket, Easytruck, and Forward Movers) offer instant
+                online quotes and booking portals, with secure deposit/payment
+                options for a truly contactless experience.
+              </>
+            ),
+          },
+        ]}
       />
     </main>
   );
