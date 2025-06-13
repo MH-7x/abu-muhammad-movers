@@ -8,7 +8,7 @@ const CTA = ({
   extra,
 }: {
   title: string;
-  desc: string;
+  desc: string | ReactNode;
   extra?: ReactNode;
 }) => {
   return (

@@ -44,7 +44,7 @@ const Services = ({ title, desc }: { title: string; desc: string }) => {
               title: "Local Moving in Dubai",
               description:
                 "Whether you're moving within Dubai as local movers in Dubai, we provide reliable services to ensure your belongings arrive safely.",
-              link: "/local-moving-in-dubai",
+              link: "/local-movers-in-dubai",
               icon: (
                 <MapPinnedIcon className="w-6 h-6 yel dark:text-gray-400 mb-3" />
               ),

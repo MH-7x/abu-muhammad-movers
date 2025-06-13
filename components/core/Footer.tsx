@@ -67,7 +67,7 @@ const Footer = () => {
               <NavLink link="/home-moving-dubai" label="Home Moving" />
               <NavLink link="/office-moving" label="Office Relocation" />
               <NavLink
-                link="/local-moving-in-dubai"
+                link="/local-movers-in-dubai"
                 label="Local Movers in Dubai"
               />
               <NavLink link="/packing-services" label="Packing Services" />

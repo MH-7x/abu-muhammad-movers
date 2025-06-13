@@ -63,55 +63,101 @@ const serviceAreas = [
   },
 ];
 
-export function Areas() {
+export function Areas({
+  title,
+  services,
+}: {
+  title?: string;
+  services?: { city: string; description: string; link: string }[];
+}) {
   return (
     <section>
       {/* Container */}
       <div className="mx-auto w-full max-w-7xl px-3 md:px-0 con mt-36">
         {/* Title */}
         <h2 className="mx-auto max-w-2xl text-center text-3xl font-semibold md:text-4xl mb-8 md:mb-12 lg:mb-16">
-          Popular Dubai Areas We Serve
+          {title ? title : " Popular Dubai Areas We Serve"}
         </h2>
 
         {/* Content */}
         <div className="grid gap-0 sm:grid-cols-2 md:grid-cols-3">
-          {serviceAreas.map((Areas, i: number) => (
-            <a
-              href={Areas.link}
-              key={i}
-              title={`contact with movers in ${Areas.city}, dubai`}
-              className="flex-col flex items-start justify-between border border-gray-300 p-10 h-60 hover:bg-black hover:text-white transition"
-            >
-              <div className=" flex w-full items-center justify-between">
-                <h3 className="text-xl ">Movers in {Areas.city}, Dubai</h3>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+          {services
+            ? services.map((services, i: number) => (
+                <a
+                  href={services.link}
+                  key={i}
+                  title={`contact with movers in ${services.city}, dubai`}
+                  className="flex-col flex items-start justify-between border border-gray-300 p-10 min-h-60 hover:bg-black hover:text-white transition"
                 >
-                  <path
-                    d="M6 18L18 6"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  ></path>
-                  <path
-                    d="M8.25 6H18V15.75"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  ></path>
-                </svg>
-              </div>
-              <div>
-                <p className="text-muted-foreground">{Areas.description}</p>
-              </div>
-            </a>
-          ))}
+                  <div className=" flex w-full items-center justify-between">
+                    <h3 className="text-xl ">{services.city}</h3>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 18L18 6"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>
+                      <path
+                        d="M8.25 6H18V15.75"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-muted-foreground mt-2">
+                      {services.description}
+                    </p>
+                  </div>
+                </a>
+              ))
+            : serviceAreas.map((Areas, i: number) => (
+                <a
+                  href={Areas.link}
+                  key={i}
+                  title={`contact with movers in ${Areas.city}, dubai`}
+                  className="flex-col flex items-start justify-between border border-gray-300 p-10 h-60 hover:bg-black hover:text-white transition"
+                >
+                  <div className=" flex w-full items-center justify-between">
+                    <h3 className="text-xl ">Movers in {Areas.city}, Dubai</h3>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 18L18 6"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>
+                      <path
+                        d="M8.25 6H18V15.75"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-muted-foreground">{Areas.description}</p>
+                  </div>
+                </a>
+              ))}
         </div>
         <p className="max-w-4xl mx-auto text-center text-gray-600 mt-5">
           Our familiarity with the logistics and regulations in these areas

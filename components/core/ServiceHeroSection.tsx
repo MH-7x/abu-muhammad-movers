@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ContactForm from "./ContactForm";
+import { ReactNode } from "react";
 
 const ServiceHeroSection = ({
   title,
@@ -8,7 +9,7 @@ const ServiceHeroSection = ({
   image,
 }: {
   title: { first: string; second: string };
-  description: string;
+  description: string | ReactNode;
   image: {
     src: string;
     alt: string;
@@ -42,7 +43,7 @@ const ServiceHeroSection = ({
                 {title.first} <br className="hidden md:block" />
                 {title.second}
               </h2>
-              <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
+              <p className="max-w-xl mb-4 line text-base leading-[22px] text-gray-200 md:text-lg">
                 {description}
               </p>
               <Link

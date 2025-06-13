@@ -6,7 +6,7 @@ import Image from "next/image";
 export const servicesLinks = [
   "/home-moving-dubai",
   "/office-moving",
-  "/local-moving-in-dubai",
+  "/local-movers-in-dubai",
   "/packing-services",
   "/single-item-moving",
   "/furniture-installation",

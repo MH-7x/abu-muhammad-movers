@@ -15,14 +15,16 @@ const TestimonialSlider = ({
     cus_rating: string;
     cus_avatar: string;
   }[];
-  title: string;
+  title?: string;
 }) => {
   return (
     <section className="mt-40 md:mb-16">
       <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8">
-        <div className="mb-16 text-center">
-          <h2 className="md:text-4xl text-3xl font-semibold ">{title}</h2>
-        </div>
+        {title && (
+          <div className="mb-16 text-center">
+            <h2 className="md:text-4xl text-3xl font-semibold ">{title}</h2>
+          </div>
+        )}
 
         <Swiper
           modules={[Autoplay]}
