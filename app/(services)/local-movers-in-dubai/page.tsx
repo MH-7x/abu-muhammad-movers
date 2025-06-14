@@ -235,7 +235,7 @@ const LocalMoversInDubaiPage = () => {
             city: "Single Item & Furniture Transport",
             description:
               "Need just one sofa or a piano moved? No problem. As professional furniture movers in Dubai, we specialize in single-item moves and handle all heavy or fragile pieces with the right equipment.",
-            link: "/single-item-moving",
+            link: "/single-item-movers-dubai",
           },
           {
             city: "Packing and Moving",

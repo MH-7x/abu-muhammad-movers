@@ -7,6 +7,7 @@ const ServiceHeroSection = ({
   title,
   description,
   image,
+  ctaUse = false,
 }: {
   title: { first: string; second: string };
   description: string | ReactNode;
@@ -14,9 +15,10 @@ const ServiceHeroSection = ({
     src: string;
     alt: string;
   };
+  ctaUse?: boolean;
 }) => {
   return (
-    <section className="relative ">
+    <section className={`relative ${ctaUse && "mt-32"}`}>
       <div className="absolute inset-0 object-cover w-full h-full">
         <Image
           src={image.src}

@@ -8,7 +8,7 @@ export const servicesLinks = [
   "/office-moving",
   "/local-movers-in-dubai",
   "/packing-services",
-  "/single-item-moving",
+  "/single-item-movers-dubai",
   "/furniture-installation",
   "/storage-services-dubai",
   "/furniture-movers-dubai",

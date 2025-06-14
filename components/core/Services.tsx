@@ -53,7 +53,7 @@ const Services = ({ title, desc }: { title: string; desc: string }) => {
               title: "Single Item Moving",
               description:
                 "No move is too small. We handle the relocation of individual items with the same care and attention to detail.",
-              link: "/single-item-moving",
+              link: "/single-item-movers-dubai",
               icon: (
                 <MapPinnedIcon className="w-6 h-6 yel dark:text-gray-400 mb-3" />
               ),

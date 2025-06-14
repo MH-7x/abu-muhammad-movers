@@ -158,7 +158,7 @@ const Sidebar = () => {
               },
               {
                 title: "Single Item Moving",
-                link: "/single-item-moving",
+                link: "/single-item-movers-dubai",
               },
               {
                 title: "Furniture Installation",
