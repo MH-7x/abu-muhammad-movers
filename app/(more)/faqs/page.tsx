@@ -554,6 +554,7 @@ const FAQsPage = () => {
     <>
       <head>
         <Script
+          id="faqs-schema"
           type="application/ld+json"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
