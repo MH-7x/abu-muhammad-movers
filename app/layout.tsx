@@ -4,6 +4,7 @@ import Navbar from "@/components/core/Navbar";
 import Footer from "@/components/core/Footer";
 import { Poppins } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
+import GoogleAnalytics from "../components/GoogleAnalytics";
 
 export const metadata: Metadata = {
   applicationName: "Abu Muhammad Movers",
@@ -51,6 +52,7 @@ export default function RootLayout({
         {children}
         <Toaster position="bottom-center" /> <Footer />
       </body>
+      <GoogleAnalytics />
     </html>
   );
 }
