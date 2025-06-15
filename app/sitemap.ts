@@ -43,6 +43,13 @@ const urls: MetadataRoute.Sitemap = [
     lastModified: new Date().toISOString(),
     images: [APP.url + "/single/same-day-single-item-move.jpg"],
   },
+  {
+    url: "/faqs",
+    changeFrequency: "monthly",
+    priority: 0.7,
+    lastModified: new Date().toISOString(),
+    images: [APP.url + "/single/same-day-single-item-move.jpg"],
+  },
 ];
 
 import { APP } from "@/lib/constants";
