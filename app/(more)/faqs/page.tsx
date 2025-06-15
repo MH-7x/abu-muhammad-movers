@@ -523,7 +523,7 @@ export const metadata: Metadata = {
   },
 };
 
-export function generateFaqSchema(
+function generateFaqSchema(
   allFAQs: {
     title: string;
     faqs: { question: string; answer: string }[];
