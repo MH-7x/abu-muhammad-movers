@@ -35,6 +35,10 @@ export const metadata: Metadata = {
         alt: "Abu Muhammad Movers team loading a single sofa into a moving truck in Dubai.",
       },
     ],
+    type: "website",
+    siteName: "Abu Muhammad Movers",
+    phoneNumbers: ["+971 55 6461731", "+971 56 7878464"],
+    emails: "abumuhammad.movers@gmail.com",
   },
   twitter: {
     title: "Single Item Movers in Dubai | Affordable Furniture Moving Service",

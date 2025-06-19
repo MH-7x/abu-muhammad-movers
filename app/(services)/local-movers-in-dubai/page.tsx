@@ -29,6 +29,10 @@ export const metadata: Metadata = {
       "Trusted local movers in Dubai. Affordable, same-day moving, packing, and storage by Abu Muhammad Mover. Call now for a free quote and stress-free service.",
     url: `${APP.url}/local-movers-in-dubai`,
     images: `${APP.url}/local/abu-muhammad-movers-dubai-truck.jpg`,
+    type: "website",
+    siteName: "Abu Muhammad Movers",
+    phoneNumbers: ["+971 55 6461731", "+971 56 7878464"],
+    emails: "abumuhammad.movers@gmail.com",
   },
   twitter: {
     title: "Trusted Local Movers in Dubai | Abu Muhammad Movers ",

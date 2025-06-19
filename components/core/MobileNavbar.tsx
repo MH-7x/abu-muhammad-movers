@@ -146,15 +146,15 @@ const Sidebar = () => {
 
               {
                 title: "Office Moving",
-                link: "/office-moving",
+                link: "#",
               },
               {
                 title: "Local Moving in Dubai",
-                link: "/local-moving-dubai",
+                link: "/local-movers-in-dubai",
               },
               {
                 title: "Packing Services",
-                link: "/packing-services",
+                link: "#",
               },
               {
                 title: "Single Item Moving",
@@ -162,15 +162,15 @@ const Sidebar = () => {
               },
               {
                 title: "Furniture Installation",
-                link: "/furniture-installation",
+                link: "#",
               },
               {
                 title: "Storage Services",
-                link: "/storage-services",
+                link: "#",
               },
               {
                 title: "Furniture Movers Dubai",
-                link: "/furniture-movers-dubai",
+                link: "#",
               },
             ]}
           />
@@ -228,7 +228,7 @@ const Sidebar = () => {
               },
               {
                 title: "Resources",
-                link: "/resources",
+                link: "#",
               },
             ]}
           />
@@ -257,15 +257,15 @@ const Sidebar = () => {
               },
               {
                 title: "Gallery",
-                link: "/gallery",
+                link: "#",
               },
               {
                 title: "Sitemap",
-                link: "/sitemap",
+                link: "#",
               },
               {
                 title: "Used Furniture Buyer",
-                link: "#",
+                link: "https://dubaiusedfurniture.ae/en",
               },
             ]}
           />

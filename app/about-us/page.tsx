@@ -27,6 +27,10 @@ export const metadata: Metadata = {
       "Abu Muhammad Movers are modern and expert movers and packers in dubai and provide a wide range of moving services in dubai, contact us now and get a free moving quote today!",
     url: `${APP.url}/about-us`,
     images: ["/images/team-image-of-movers.jpg"],
+    type: "website",
+    siteName: "Abu Muhammad Movers",
+    phoneNumbers: ["+971 55 6461731", "+971 56 7878464"],
+    emails: "abumuhammad.movers@gmail.com",
   },
   twitter: {
     title: "About Us | Abu Muhammad Movers",

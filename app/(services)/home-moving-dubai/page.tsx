@@ -32,6 +32,10 @@ export const metadata: Metadata = {
       "Are you looking for movers that will relocation you home within dubai or beyond dubai at best price, look no further than Abu Muhammad Movers, leading and best house shifting company in dubai. Contact us now!",
     images: [`${APP.url}/home-moving-dubai`],
     url: `${APP.url}/home-moving-dubai`,
+    type: "website",
+    siteName: "Abu Muhammad Movers",
+    phoneNumbers: ["+971 55 6461731", "+971 56 7878464"],
+    emails: "abumuhammad.movers@gmail.com",
   },
   twitter: {
     title: "Home Movers And Packers Dubai | Affordable House Shifting Services",

@@ -29,6 +29,10 @@ export const metadata: Metadata = {
         alt: "Book Movers Online",
       },
     ],
+    type: "website",
+    siteName: "Abu Muhammad Movers",
+    phoneNumbers: ["+971 55 6461731", "+971 56 7878464"],
+    emails: "abumuhammad.movers@gmail.com",
   },
   twitter: {
     title: "Book Movers Online | Abu Muhammad Movers",
@@ -52,9 +56,9 @@ const BookMoversOnlinePage = () => {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="md:flex gap-x-32 clear-left md:mb-16 mb-10">
             <div className=" md:mb-0 mb-4">
-              <h2 className="text-black font-manrope md:text-4xl text-3xl font-semibold md:pr-20 leading-10 mb-5 md:text-left text-center">
+              <h1 className="text-black font-manrope md:text-4xl text-3xl font-semibold md:pr-20 leading-10 mb-5 md:text-left text-center">
                 Contact With Best Movers and Packers in Dubai
-              </h2>
+              </h1>
               <p className="text-gray-600 text-lg font-normal leading-7 mb-7 md:text-left text-center">
                 We are the best movers and packers in Dubai, providing top-notch
                 moving services to make your relocation smooth and hassle-free.

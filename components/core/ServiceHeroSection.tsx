@@ -41,10 +41,20 @@ const ServiceHeroSection = ({
         <div className="relative px-3 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="flex flex-col items-center justify-between xl:flex-row">
             <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
-              <h2 className="max-w-xl mb-6 text-3xl font-semibold tracking-tight text-white sm:text-4xl sm:leading-none">
-                {title.first} <br className="hidden md:block" />
-                {title.second}
-              </h2>
+              {ctaUse && (
+                <div className="mb-6">
+                  <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                    {title.first}{" "}
+                    <span className="text-[#ecd920]">{title.second}</span>
+                  </h2>
+                </div>
+              )}
+              {!ctaUse && (
+                <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                  {title.first}{" "}
+                  <span className="text-[#ecd920]">{title.second}</span>
+                </h1>
+              )}
               <p className="max-w-xl mb-4 line text-base leading-[22px] text-gray-200 md:text-lg">
                 {description}
               </p>

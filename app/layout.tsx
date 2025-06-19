@@ -18,11 +18,7 @@ export const metadata: Metadata = {
     },
     index: true,
   },
-  openGraph: {
-    siteName: "Abu Muhammad Movers",
-    phoneNumbers: ["+971 55 6461731", "+971 56 7878464"],
-    emails: "abumuhammad.movers@gmail.com",
-  },
+
   twitter: {
     card: "summary_large_image",
     creator: "Abu Muhammad Movers",
