@@ -5,31 +5,26 @@ import Image from "next/image";
 
 export const servicesLinks = [
   "/home-moving-dubai",
-  "/office-moving",
+  "#",
   "/local-movers-in-dubai",
-  "/packing-services",
+  "#",
   "/single-item-movers-dubai",
-  "/furniture-installation",
-  "/storage-services-dubai",
-  "/furniture-movers-dubai",
+  "#",
+  "#",
+  "#",
 ];
-export const locationsLinks = [
-  "/movers-in-dubai",
-  "/movers-in-sharjah",
-  "/movers-in-abu-dhabi",
-  "/movers-in-ajman",
-];
+export const locationsLinks = ["#", "#", "#", "#"];
 import {
   ListChecks,
   LucidePhoneCall,
   MessageCircleMoreIcon,
   Send,
 } from "lucide-react";
-export const companyLinks = ["/about-us", "/book-movers-online", "/resources"];
+export const companyLinks = ["/about-us", "/book-movers-online", "#"];
 export const othersLinks = [
   "/faqs",
   "/gallery",
-  "/sitemap",
+  "#",
   "https://dubaiusedfurniture.ae/en",
 ];
 const DesktopNavbar = () => {
