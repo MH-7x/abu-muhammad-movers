@@ -70,39 +70,27 @@ const Footer = () => {
                 link="/local-movers-in-dubai"
                 label="Local Movers in Dubai"
               />
-              <NavLink link="/packing-services" label="Packing Services" />
+              <NavLink link="#" label="Packing Services" />
               <NavLink
                 link="/single-item-movers-dubai"
                 label="Single Item Moving"
               />
-              <NavLink
-                link="/furniture-installation"
-                label="Furniture Installation"
-              />
-              <NavLink
-                link="/storage-services-dubai"
-                label="Storage Services"
-              />
-              <NavLink
-                link="/furniture-movers-dubai"
-                label="Furniture Movers in Dubai"
-              />
+              <NavLink link="#" label="Furniture Installation" />
+              <NavLink link="#" label="Storage Services" />
+              <NavLink link="#" label="Furniture Movers in Dubai" />
             </LinkGroup>
             <LinkGroup header="LOCATIONS">
-              <NavLink link="/movers-in-dubai" label="Movers in Dubai" />
-              <NavLink link="/movers-in-sharjah" label="Movers in Sharjah" />
-              <NavLink
-                link="/movers-in-abu-dhabi"
-                label="Movers in Abu Dhabi"
-              />
-              <NavLink link="/movers-in-ajman" label="Movers in Ajman" />
+              <NavLink link="#" label="Movers in Dubai" />
+              <NavLink link="#" label="Movers in Sharjah" />
+              <NavLink link="#" label="Movers in Abu Dhabi" />
+              <NavLink link="#" label="Movers in Ajman" />
             </LinkGroup>
             <LinkGroup header="Useful Links">
               <NavLink link="/about-us" label="About Us" />
               <NavLink link="/book-movers-online" label="Contact Us" />
               <NavLink link="/faqs" label="faqs" />
-              <NavLink link="/sitemap" label="Sitemap" />
-              <NavLink link="/gallery" label="Gallery" />
+              <NavLink link="#" label="Sitemap" />
+              <NavLink link="#" label="Gallery" />
               <NavLink
                 link="https://dubaiusedfurniture.ae/en"
                 label="Furniture Buyers"

@@ -133,6 +133,7 @@ const BookMoversOnlinePage = () => {
           src: "/images/movers-in-dubai.jpg",
           alt: "Book Movers Online",
         }}
+        ctaUse={true}
       />
       <section id="moving-cost-section" className="md:px-0 px-3 mt-36">
         <h2 className="text-center max-w-2xl font-semibold mb-5 mx-auto  md:text-4xl text-3xl">
