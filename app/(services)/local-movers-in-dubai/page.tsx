@@ -263,7 +263,7 @@ const LocalMoversInDubaiPage = () => {
             city: "Storage Services",
             description:
               "Short on space during your move? We offer secure temporary storage in climate-controlled facilities, so your belongings are safe and accessible when needed.",
-            link: "/storage-services-dubai",
+            link: "#",
           },
           {
             city: "Furniture Movers Dubai",

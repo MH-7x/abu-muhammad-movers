@@ -520,6 +520,14 @@ export const metadata: Metadata = {
     description:
       "Find answers to common questions about moving services in Dubai, Sharjah, Ajman, Abu Dhabi, and more. Learn about pricing, services, and how to prepare for your move.",
     url: `${APP.url}/faqs `,
+    images: [
+      {
+        url: `${APP.url}/images/movers-packers-faqs`,
+        width: 1200,
+        height: 630,
+        alt: "Abu Muhammad Movers Faqs",
+      },
+    ],
     type: "website",
     siteName: "Abu Muhammad Movers",
     phoneNumbers: ["+971 55 6461731", "+971 56 7878464"],
