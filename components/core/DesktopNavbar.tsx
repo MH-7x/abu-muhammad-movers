@@ -76,7 +76,7 @@ const DesktopNavbar = () => {
 
             <li>
               <Link
-                href={"/blogs"}
+                href={"#"}
                 className="transition-colors px-2 border-b border-transparent hover:border-primary"
               >
                 BLOGS

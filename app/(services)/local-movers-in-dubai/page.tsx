@@ -221,13 +221,13 @@ const LocalMoversInDubaiPage = () => {
             city: "Home Moving / Residential Relocation",
             description:
               "Moving houses, apartments, or villas? Our home movers in Dubai pack, load, and transport your belongings safely to your new address. We handle permits and building rules so you don’t have to.",
-            link: "/home-moving",
+            link: "#",
           },
           {
             city: "Office Moving / Commercial Relocation",
             description:
               " Minimize downtime with our expert office movers Dubai. We carefully relocate office furniture, electronics, and files, so your business can resume quickly.",
-            link: "/office-moving",
+            link: "#",
           },
           {
             city: "Dubai Logistics & Moving",
@@ -245,19 +245,19 @@ const LocalMoversInDubaiPage = () => {
             city: "Packing and Moving",
             description:
               "Our full packing services Dubai use high-quality materials (boxes, bubble wrap, tape) to protect your items. We pack, label, transport, and unpack so you don’t have to lift a finger.",
-            link: "/packing-services",
+            link: "#",
           },
           {
             city: "Furniture Installation",
             description:
               "Our team provides furniture dismantling and assembly services, ensuring that your furniture is set up correctly in your new space. We are the best furniture movers in Dubai.",
-            link: "/furniture-installation-dubai",
+            link: "/",
           },
           {
             city: "Fine Art Relocation",
             description:
               "Trust our specialists to handle the secure relocation of your delicate and valuable fine art pieces.",
-            link: "/fine-art-relocation",
+            link: "#",
           },
           {
             city: "Storage Services",
@@ -269,7 +269,7 @@ const LocalMoversInDubaiPage = () => {
             city: "Furniture Movers Dubai",
             description:
               "Get free quotes or book your moving service in Dubai. We provide apartment, villa, office, and single-item moving & relocation services at unbeatable prices",
-            link: "/furniture-movers-dubai",
+            link: "#",
           },
         ]}
       />
@@ -444,10 +444,7 @@ const LocalMoversInDubaiPage = () => {
         </p>
         <p>
           We even include{" "}
-          <Link
-            className="underline underline-offset-2"
-            href={"http://localhost:3000/furniture-installation"}
-          >
+          <Link className="underline underline-offset-2" href={"#"}>
             furniture disassembly and reassembly
           </Link>{" "}
           at no extra charge, making even complex moves simple. Our support line

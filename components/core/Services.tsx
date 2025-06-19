@@ -26,7 +26,7 @@ const Services = ({ title, desc }: { title: string; desc: string }) => {
               title: "Home Moving in Dubai",
               description:
                 "From apartments to villas, our home movers in Dubai ensure a smooth transition for your residential move. We specialize in apartment movers in Dubai, villa movers in Dubai, and comprehensive house moving in Dubai.",
-              link: "/home-moving",
+              link: "/home-moving-dubai",
               icon: (
                 <HomeIcon className="w-6 h-6 yel dark:text-gray-400 mb-3" />
               ),
@@ -35,7 +35,7 @@ const Services = ({ title, desc }: { title: string; desc: string }) => {
               title: "Office Moving Within UAE",
               description:
                 "Looking for reliable office moving within the UAE? Our professional movers and packers in Dubai and beyond specialize in seamless corporate relocations. We manage everything from packing and transporting furniture to IT equipment for businesses of all sizes.",
-              link: "/office-moving",
+              link: "#",
               icon: (
                 <Building2Icon className="w-6 h-6 yel dark:text-gray-400 mb-3" />
               ),
@@ -62,7 +62,7 @@ const Services = ({ title, desc }: { title: string; desc: string }) => {
               title: "Packing Services",
               description:
                 "Our expert packers and movers in Dubai use high-quality packing materials to safeguard your possessions during transit. We are known for our meticulous packing and moving services.",
-              link: "/packing-services",
+              link: "#",
               icon: (
                 <PackageCheckIcon className="w-6 h-6 yel dark:text-gray-400 mb-3" />
               ),
@@ -71,14 +71,14 @@ const Services = ({ title, desc }: { title: string; desc: string }) => {
               title: "Furniture Installation",
               description:
                 "Our team provides furniture dismantling and assembly services, ensuring that your furniture is set up correctly in your new space. We are the best furniture movers in Dubai.",
-              link: "/furniture-installation-dubai",
+              link: "#",
               icon: <Drill className="w-6 h-6 yel dark:text-gray-400 mb-3" />,
             },
             {
               title: "Fine Art Relocation",
               description:
                 "Trust our specialists to handle the secure relocation of your delicate and valuable fine art pieces.",
-              link: "/fine-art-relocation",
+              link: "#",
               icon: (
                 <PianoIcon className="w-6 h-6 yel dark:text-gray-400 mb-3" />
               ),
@@ -87,7 +87,7 @@ const Services = ({ title, desc }: { title: string; desc: string }) => {
               title: "Storage Services Dubai",
               description:
                 "Secure storage solutions are available for your short-term or long-term needs in dubai, providing a safe space for your belongings.",
-              link: "/storage-services-dubai",
+              link: "#",
               icon: (
                 <Warehouse className="w-6 h-6 yel dark:text-gray-400 mb-3" />
               ),
@@ -96,7 +96,7 @@ const Services = ({ title, desc }: { title: string; desc: string }) => {
               title: "Furniture Movers Dubai",
               description:
                 "Get free quotes or book your moving service in Dubai. We provide apartment, villa, office, and single-item moving & relocation services at unbeatable prices",
-              link: "/furniture-movers-dubai",
+              link: "#",
               icon: (
                 <Warehouse className="w-6 h-6 yel dark:text-gray-400 mb-3" />
               ),

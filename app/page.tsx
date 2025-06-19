@@ -28,25 +28,25 @@ export const locations = [
     city: "Movers in Dubai",
     description:
       "Connect with Movers in Dubai, just call / whatsapp to us and you got highly trained movers in you gate!",
-    link: "/movers-in-dubai",
+    link: "#",
   },
   {
     city: "Movers in Sharjah",
     description:
       "Looking for reliable movers in Sharjah? Call or WhatsApp us and our trained team will be at your doorstep in no time!",
-    link: "/movers-in-sharjah",
+    link: "#",
   },
   {
     city: "Movers in Abu Dhabi",
     description:
       "Need expert movers in Abu Dhabi? Just give us a call or ping us on WhatsApp — our team is ready to help you move with ease!",
-    link: "/movers-in-abu-dhabi",
+    link: "#",
   },
   {
     city: "Movers in Ajman",
     description:
       "Moving in or out of Ajman? We’re just a call or WhatsApp away — let our skilled movers handle everything for you!",
-    link: "/movers-in-ajman",
+    link: "#",
   },
 ];
 

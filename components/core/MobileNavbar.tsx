@@ -236,7 +236,7 @@ const Sidebar = () => {
 
         {/* OTHER LINKS */}
         <li className="border-b border-accent/50 mb-2 pl-4 py-2">
-          <Link onClick={closeSidebar} href={"/blogs"}>
+          <Link onClick={closeSidebar} href={"#"}>
             BLOGS
           </Link>
         </li>

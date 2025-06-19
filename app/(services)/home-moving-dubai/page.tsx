@@ -315,7 +315,7 @@ const HomeMovingDubaiPage = () => {
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-10 mt-16 items-center md:px-10">
           <div>
-            <Link href={"/office-moving"}>
+            <Link href={"#"}>
               <h3 className="md:text-3xl text-2xl mb-5">
                 Office Movers in Dubai
               </h3>
@@ -361,7 +361,7 @@ const HomeMovingDubaiPage = () => {
             />
           </div>
           <div>
-            <Link href={"packing-services"}>
+            <Link href={"#"}>
               <h3 className="md:text-3xl text-2xl mb-5">
                 Packing and Unpacking Services Dubai
               </h3>
@@ -392,7 +392,7 @@ const HomeMovingDubaiPage = () => {
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-10 mt-16 items-center md:px-10">
           <div>
-            <Link href="storage-services">
+            <Link href="#">
               {" "}
               <h3 className="md:text-3xl text-2xl mb-5">
                 Storage Services Dubai
@@ -436,7 +436,7 @@ const HomeMovingDubaiPage = () => {
             />
           </div>
           <div>
-            <Link href={"/furniture-installation"}>
+            <Link href={"#"}>
               <h3 className="md:text-3xl text-2xl mb-5">
                 Furniture Disassembly, Assembly, and Installation
               </h3>
@@ -892,10 +892,7 @@ const HomeMovingDubaiPage = () => {
             answer: (
               <>
                 Absolutely. We offer comprehensive{" "}
-                <Link
-                  className="underline underline-offset-2"
-                  href={"/packing-services"}
-                >
+                <Link className="underline underline-offset-2" href={"#"}>
                   packing and unpacking services
                 </Link>{" "}
                 using high-quality materials to ensure your items are secure
