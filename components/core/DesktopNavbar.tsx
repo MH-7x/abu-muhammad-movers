@@ -7,7 +7,7 @@ export const servicesLinks = [
   "/home-moving-dubai",
   "#",
   "/local-movers-in-dubai",
-  "#",
+  "/packing-services-in-dubai",
   "/single-item-movers-dubai",
   "#",
   "#",

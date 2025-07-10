@@ -363,13 +363,17 @@ const HomeMovingDubaiPage = () => {
           <div>
             <Link href={"#"}>
               <h3 className="md:text-3xl text-2xl mb-5">
-                Packing and Unpacking Services Dubai
+                <Link href={"/packing-services-in-dubai"}>
+                  Packing and Un Packing Services Dubai
+                </Link>
               </h3>
             </Link>
             <p className="text-gray-600">
               Proper packing is the foundation of a successful move. Our
-              professional packing services in Dubai utilize high-quality
-              packing materials to ensure the safety of your belongings.
+              professional{" "}
+              <Link href={"/packing-services-in-dubai"}>Packing Services</Link>{" "}
+              in Dubai utilize high-quality packing materials to ensure the
+              safety of your belongings.
             </p>
             <p className="text-gray-600 mt-2">
               Our skilled packers carefully wrap and box everything from fragile
@@ -710,8 +714,9 @@ const HomeMovingDubaiPage = () => {
           <span className="underline underline-offset-4"> volume</span>,
           <span className="underline underline-offset-4"> distance</span> and
           the services you need. Here,there is no need to worry, just contact us
-          and get all levels of moving and packing services at affordable
-          pricing.
+          and get all levels of moving and{" "}
+          <Link href={"/packing-services-in-dubai"}>Packing Services</Link> at
+          affordable pricing.
         </p>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-10 w-full con mt-10">
           <p className="text-gray-600">

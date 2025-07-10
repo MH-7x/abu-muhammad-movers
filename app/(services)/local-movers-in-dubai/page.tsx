@@ -1,4 +1,3 @@
-import React from "react";
 import type { Metadata } from "next";
 import { APP } from "@/lib/constants";
 import ServiceHeroSection from "@/components/core/ServiceHeroSection";
@@ -522,8 +521,9 @@ const LocalMoversInDubaiPage = () => {
           <span className="underline underline-offset-4"> volume</span>,
           <span className="underline underline-offset-4"> distance</span> and
           the services you need. Here,there is no need to worry, just contact us
-          and get all levels of moving and packing services at affordable
-          pricing.
+          and get all levels of moving and{" "}
+          <Link href={"/packing-services-in-dubai"}>Packing Services</Link> at
+          affordable pricing.
         </p>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-10 w-full con mt-10">
           <p className="text-gray-600">

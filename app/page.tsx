@@ -88,8 +88,9 @@ export default function Home() {
             </h1>
             <p className="md:text-xl/6 text-lg mt-3 text-muted-foreground max-w-2xl">
               Welcome to Abu Muhammad Movers, your premier choice for
-              comprehensive moving and packing services throughout the Dubai,
-              UAE.
+              comprehensive moving and{" "}
+              <Link href={"/packing-services-in-dubai"}>Packing Services</Link>{" "}
+              throughout the Dubai, UAE.
             </p>
             <div className="mt-5 flex gap-x-5">
               <Link href={"/book-movers-online"}>
@@ -172,8 +173,12 @@ export default function Home() {
                   Comprehensive Services
                 </h3>
                 <p className=" text-muted-foreground mt-1 text-sm">
-                  We offer a wide array of moving and packing services, making
-                  us your one-stop solution for all your relocation needs.
+                  We offer a wide array of moving and{" "}
+                  <Link href={"/packing-services-in-dubai"}>
+                    Packing Services
+                  </Link>
+                  , making us your one-stop solution for all your relocation
+                  needs.
                 </p>
               </div>
             </div>
@@ -595,8 +600,9 @@ export default function Home() {
             <span className="underline underline-offset-4"> volume</span>,
             <span className="underline underline-offset-4"> distance</span> and
             the services you need. Here,there is no need to worry, just contact
-            us and get all levels of moving and packing services at affordable
-            pricing.
+            us and get all levels of moving and{" "}
+            <Link href={"/packing-services-in-dubai"}>Packing Services</Link> at
+            affordable pricing.
           </p>
         </section>
         <CTA

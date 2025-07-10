@@ -12,6 +12,7 @@ import Image from "next/image";
 import React from "react";
 import type { Metadata } from "next";
 import { APP } from "@/lib/constants";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About Us | Abu Muhammad Movers",
@@ -103,7 +104,11 @@ const About1 = () => {
                 <p className="mb-8 text-base text-body-color dark:text-dark-6">
                   Established in 2010, we’ve spent over a decade perfecting our
                   craft—delivering professional, reliable, and human-centered
-                  moving and packing services that put your mind at ease.
+                  moving and{" "}
+                  <Link href={"/packing-services-in-dubai"}>
+                    Packing Services
+                  </Link>{" "}
+                  that put your mind at ease.
                 </p>
                 <a
                   href="javascript:void(0)"
@@ -185,8 +190,9 @@ const About1 = () => {
       <section className="md:px-0 px-3 mt-36 max-w-5xl mx-auto">
         <h2 className="md:text-4xl text-3xl font-semibold">What We Offer</h2>
         <p className="text-gray-600 mt-3">
-          We provide a full spectrum of moving and packing services designed to
-          fit every requirement and budget:
+          We provide a full spectrum of moving and{" "}
+          <Link href={"/packing-services-in-dubai"}>Packing Services</Link>{" "}
+          designed to fit every requirement and budget:
         </p>
 
         <ul className="mt-5 grid md:grid-cols-2 grid-cols-1 gap-4 list-disc list-inside text-gray-600">
@@ -200,7 +206,10 @@ const About1 = () => {
             <strong>Local Moving in Dubai</strong>
           </li>
           <li className="bg-secondary/50 p-5 rounded-2xl">
-            <strong>Packing Services (full-service or materials-only)</strong>
+            <strong>
+              <Link href={"/packing-services-in-dubai"}>Packing Services</Link>{" "}
+              (full-service or materials-only)
+            </strong>
           </li>
           <li className="bg-secondary/50 p-5 rounded-2xl">
             <strong>Single Item Moving ( large or small item )</strong>

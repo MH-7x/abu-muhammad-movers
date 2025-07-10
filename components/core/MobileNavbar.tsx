@@ -154,7 +154,7 @@ const Sidebar = () => {
               },
               {
                 title: "Packing Services",
-                link: "#",
+                link: "/packing-services-in-dubai",
               },
               {
                 title: "Single Item Moving",

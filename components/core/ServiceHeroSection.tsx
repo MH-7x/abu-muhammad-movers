@@ -28,7 +28,7 @@ const ServiceHeroSection = ({
         />
       </div>
 
-      <div className="relative bg-black/50 pt-16">
+      <div className="relative bg-black/70 pt-16">
         <svg
           className="absolute inset-x-0 -bottom-1 text-white"
           viewBox="0 0 1160 163"
@@ -55,7 +55,7 @@ const ServiceHeroSection = ({
                   <span className="text-[#ecd920]">{title.second}</span>
                 </h1>
               )}
-              <p className="max-w-xl mb-4 line text-base leading-[22px] text-gray-200 md:text-lg">
+              <p className="max-w-xl mt-3 mb-4 line text-base leading-[22px] text-gray-200 md:text-lg">
                 {description}
               </p>
               <Link
