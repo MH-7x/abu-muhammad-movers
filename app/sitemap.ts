@@ -44,6 +44,13 @@ const urls: MetadataRoute.Sitemap = [
     images: [APP.url + "/single/same-day-single-item-move.jpg"],
   },
   {
+    url: "/packing-services-in-dubai",
+    changeFrequency: "monthly",
+    priority: 0.7,
+    lastModified: new Date().toISOString(),
+    images: [APP.url + "/packing/packing-services-dubai.jpg"],
+  },
+  {
     url: "/faqs",
     changeFrequency: "monthly",
     priority: 0.7,
