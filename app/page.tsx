@@ -222,8 +222,9 @@ export default function Home() {
           <p className="md:text-lg text-base mt-2 max-w-4xl text-muted-foreground">
             Our expert team specializes in helping families and businesses move
             with ease, ensuring a stress-free experience from start to finish.
-            When you're looking for reliable and professional movers in Sharjah,
-            trust our proven track record to handle all your moving needs.
+            When you&lsquo;re looking for reliable and professional movers in
+            Sharjah, trust our proven track record to handle all your moving
+            needs.
           </p>
           <p className="md:text-lg text-base mt-2 max-w-4xl text-muted-foreground">
             Here is why Abu Muhammad Movers are the Best Movers and Packers in
@@ -577,9 +578,9 @@ export default function Home() {
                 What Makes Us the Best Movers and Packers in Sharjah
               </h2>
               <p className="text-gray-600 mb-6">
-                For over 15 years, we've been the top choice for movers and
-                packers in Sharjah. Our commitment to excellence has made us the
-                go-to team for stress-free residential and commercial moves
+                For over 15 years, we&lsquo;ve been the top choice for movers
+                and packers in Sharjah. Our commitment to excellence has made us
+                the go-to team for stress-free residential and commercial moves
                 across the UAE.
               </p>
               <Button className="bg-primary text-white hover:bg-primary-600 transition-colors">
