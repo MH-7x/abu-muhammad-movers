@@ -24,6 +24,7 @@ const ServiceHeroSection = ({
           src={image.src}
           alt={image.alt}
           fill
+          loading="eager"
           className="object-cover object-center w-full h-full"
         />
       </div>

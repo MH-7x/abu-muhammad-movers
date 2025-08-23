@@ -283,6 +283,61 @@ allFAQs.push(
     ],
   },
   {
+    title: "Packing Services Related FAQs",
+    faqs: [
+      {
+        question: "What packing services are available?",
+        answer:
+          "We offer full, partial, and fragile-only packing. You can also request delivery of empty boxes for self-packing.",
+      },
+      {
+        question: "Do you supply the packing materials?",
+        answer:
+          "Yes. Boxes, bubble wrap, tape, and padding are included in your quote. No need to buy them yourself.",
+      },
+      {
+        question: "Can I pack some items myself?",
+        answer:
+          "Yes. We can even deliver boxes in advance. Many customers pack clothes or personal items while we pack furniture and breakables.",
+      },
+      {
+        question: "How do you handle fragile items?",
+        answer:
+          "We use extra cushioning and label boxes as fragile. Glassware, dishes, electronics, and art receive special protection.",
+      },
+      {
+        question: "Is unpacking included in the service?",
+        answer:
+          "Yes. If you select it, we’ll unpack boxes, set up items, and remove all packing materials for you.",
+      },
+      {
+        question: "Are there eco-friendly packing options?",
+        answer:
+          "We use recyclable boxes and can offer reusable crates upon request. Let us know if you prefer a green move.",
+      },
+      {
+        question: "How much does full packing cost?",
+        answer:
+          "It depends on your home size and items. It’s included in our moving quotes and explained upfront—no hidden fees.",
+      },
+      {
+        question: "How do I prepare for the packing team?",
+        answer:
+          "Separate any items you’ll move yourself and keep valuables aside. Our team needs clear access to every room.",
+      },
+      {
+        question: "What safety measures do packers take?",
+        answer:
+          "Our trained packers wear gloves and use proper lifting methods. We follow all safety protocols to protect your belongings.",
+      },
+      {
+        question: "Why hire professional packers?",
+        answer:
+          "It saves time and prevents damage. Our team packs efficiently and ensures your belongings arrive safe and sound.",
+      },
+    ],
+  },
+  {
     title: "Local Movers in Dubai Related FAQs",
     faqs: [
       {
@@ -396,61 +451,7 @@ allFAQs.push(
       },
     ],
   },
-  {
-    title: "Packing Services Related FAQs",
-    faqs: [
-      {
-        question: "What packing services are available?",
-        answer:
-          "We offer full, partial, and fragile-only packing. You can also request delivery of empty boxes for self-packing.",
-      },
-      {
-        question: "Do you supply the packing materials?",
-        answer:
-          "Yes. Boxes, bubble wrap, tape, and padding are included in your quote. No need to buy them yourself.",
-      },
-      {
-        question: "Can I pack some items myself?",
-        answer:
-          "Yes. We can even deliver boxes in advance. Many customers pack clothes or personal items while we pack furniture and breakables.",
-      },
-      {
-        question: "How do you handle fragile items?",
-        answer:
-          "We use extra cushioning and label boxes as fragile. Glassware, dishes, electronics, and art receive special protection.",
-      },
-      {
-        question: "Is unpacking included in the service?",
-        answer:
-          "Yes. If you select it, we’ll unpack boxes, set up items, and remove all packing materials for you.",
-      },
-      {
-        question: "Are there eco-friendly packing options?",
-        answer:
-          "We use recyclable boxes and can offer reusable crates upon request. Let us know if you prefer a green move.",
-      },
-      {
-        question: "How much does full packing cost?",
-        answer:
-          "It depends on your home size and items. It’s included in our moving quotes and explained upfront—no hidden fees.",
-      },
-      {
-        question: "How do I prepare for the packing team?",
-        answer:
-          "Separate any items you’ll move yourself and keep valuables aside. Our team needs clear access to every room.",
-      },
-      {
-        question: "What safety measures do packers take?",
-        answer:
-          "Our trained packers wear gloves and use proper lifting methods. We follow all safety protocols to protect your belongings.",
-      },
-      {
-        question: "Why hire professional packers?",
-        answer:
-          "It saves time and prevents damage. Our team packs efficiently and ensures your belongings arrive safe and sound.",
-      },
-    ],
-  },
+
   {
     title: "Furniture Installation Related FAQs",
     faqs: [
