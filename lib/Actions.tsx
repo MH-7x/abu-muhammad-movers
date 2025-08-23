@@ -26,9 +26,9 @@ export const SendMail = async ({
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     const response = await resend.emails.send({
-      from: "movers_requests@resend.dev",
+      from: "New Quote <onboarding@resend.dev>",
       to: "abumuhammad.movers@gmail.com",
-      subject: "New Moving Request",
+      subject: "New Quote Request",
       react: EmailTemplate({
         name: data.customer_name,
         Date: new Date(),

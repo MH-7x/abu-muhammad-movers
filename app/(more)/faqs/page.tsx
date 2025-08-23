@@ -535,7 +535,7 @@ export const metadata: Metadata = {
   },
 };
 
-function generateFaqSchema(
+export function generateFaqSchema(
   allFAQs: {
     title: string;
     faqs: { question: string; answer: string }[];

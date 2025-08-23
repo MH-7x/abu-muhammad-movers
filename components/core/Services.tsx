@@ -23,18 +23,18 @@ const Services = ({ title, desc }: { title: string; desc: string }) => {
         <ServiceCard
           list={[
             {
-              title: "Home Moving in Dubai",
+              title: "House Movers in Sharjah & Dubai",
               description:
-                "From apartments to villas, our home movers in Dubai ensure a smooth transition for your residential move. We specialize in apartment movers in Dubai, villa movers in Dubai, and comprehensive house moving in Dubai.",
+                "We move villas, apartments, and shared accommodation with care. From villa shifting services in Sharjah to apartment moves, we ensure your household is relocated without damage or delay.",
               link: "/home-moving-dubai",
               icon: (
                 <HomeIcon className="w-6 h-6 yel dark:text-gray-400 mb-3" />
               ),
             },
             {
-              title: "Office Moving Within UAE",
+              title: "Office Movers in Sharjah",
               description:
-                "Looking for reliable office moving within the UAE? Our professional movers and packers in Dubai and beyond specialize in seamless corporate relocations. We manage everything from packing and transporting furniture to IT equipment for businesses of all sizes.",
+                "Our reliable office relocation services in Sharjah include dismantling workstations, IT equipment handling, and overnight moves to minimize downtime.",
               link: "#",
               icon: (
                 <Building2Icon className="w-6 h-6 yel dark:text-gray-400 mb-3" />
@@ -50,6 +50,15 @@ const Services = ({ title, desc }: { title: string; desc: string }) => {
               ),
             },
             {
+              title: "Furniture Movers in Sharjah",
+              description:
+                "We dismantle, pack, transport, and reassemble everything from sofas to wardrobes. Choose us as your affordable furniture moving company in Sharjah for safe and efficient handling",
+              link: "/single-item-movers-dubai",
+              icon: (
+                <MapPinnedIcon className="w-6 h-6 yel dark:text-gray-400 mb-3" />
+              ),
+            },
+            {
               title: "Single Item Moving",
               description:
                 "No move is too small. We handle the relocation of individual items with the same care and attention to detail.",
@@ -59,10 +68,10 @@ const Services = ({ title, desc }: { title: string; desc: string }) => {
               ),
             },
             {
-              title: "Packing Services",
+              title: "Packing and Unpacking Services",
               description:
-                "Our expert packers and movers in Dubai use high-quality packing materials to safeguard your possessions during transit. We are known for our meticulous packing and moving services.",
-              link: "#",
+                "From bubble wrapped glassware to labeled boxes, our packing and unpacking services in Sharjah use premium packing materials in Sharjah for maximum protection.",
+              link: "/packing-services-in-dubai",
               icon: (
                 <PackageCheckIcon className="w-6 h-6 yel dark:text-gray-400 mb-3" />
               ),
@@ -70,32 +79,23 @@ const Services = ({ title, desc }: { title: string; desc: string }) => {
             {
               title: "Furniture Installation",
               description:
-                "Our team provides furniture dismantling and assembly services, ensuring that your furniture is set up correctly in your new space. We are the best furniture movers in Dubai.",
+                "Our team provides furniture dismantling and assembly services, ensuring that your furniture is set up correctly in your new space. We are the best furniture movers in sharjah.",
               link: "#",
               icon: <Drill className="w-6 h-6 yel dark:text-gray-400 mb-3" />,
             },
             {
-              title: "Fine Art Relocation",
+              title: "Special Moving Services",
               description:
-                "Trust our specialists to handle the secure relocation of your delicate and valuable fine art pieces.",
+                "We offer pet friendly moves, eco friendly packing, and same day or weekend moving services in Sharjah to fit your schedule.",
               link: "#",
               icon: (
                 <PianoIcon className="w-6 h-6 yel dark:text-gray-400 mb-3" />
               ),
             },
             {
-              title: "Storage Services Dubai",
+              title: "Secure Storage Solutions",
               description:
-                "Secure storage solutions are available for your short-term or long-term needs in dubai, providing a safe space for your belongings.",
-              link: "#",
-              icon: (
-                <Warehouse className="w-6 h-6 yel dark:text-gray-400 mb-3" />
-              ),
-            },
-            {
-              title: "Furniture Movers Dubai",
-              description:
-                "Get free quotes or book your moving service in Dubai. We provide apartment, villa, office, and single-item moving & relocation services at unbeatable prices",
+                "Need temporary or long term storage? Our secure storage facilities in Sharjah are climate controlled, monitored 24/7, and insured.",
               link: "#",
               icon: (
                 <Warehouse className="w-6 h-6 yel dark:text-gray-400 mb-3" />

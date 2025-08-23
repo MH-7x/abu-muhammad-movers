@@ -24,7 +24,7 @@ const Content = () => {
                       src={
                         "/images/movers-packing-household-furniture-in-dubai.png"
                       }
-                      alt="Abu Muhammad Movers Team packing household furniture in Dubai"
+                      alt="Abu Muhammad Movers Team packing household furniture in Sharjah"
                       fill
                       className="absolute object-cover object-center"
                     />
@@ -53,7 +53,7 @@ const Content = () => {
                 </h2>
                 <p className="mb-5 text-base text-gray-600">
                   At Abu Muhammad Movers, we’re transforming the moving and
-                  storage experience in Dubai with our innovative approach and
+                  storage experience in Sharjah with our innovative approach and
                   customer-first services.
                 </p>
                 <p className="mb-8 text-base text-gray-600">
@@ -74,12 +74,12 @@ const Content = () => {
       <div className="container mx-auto">
         <div className="md:-mx-4 flex flex-wrap">
           <ServiceCard
-            title="Reliable and Fast Moving Services in Dubai"
+            title="Reliable and Fast Moving Services in Sharjah"
             details="We’re not just movers—we’re professionals committed to the safe and efficient transport of your belongings. You can relax knowing your items are in expert hands. And yes, we even throw in a little treat to celebrate your stress-free move!"
             icon={<Truck width={36} height={36} />}
           />
           <ServiceCard
-            title="All-in-One Moving and Storage Solution in Dubai"
+            title="All-in-One Moving and Storage Solution in Sharjah"
             details="From packing to delivery and storage, Abu Muhammad Movers is your go-to solution. Our world-class customer support is always ready to help, ensuring a seamless moving experience."
             icon={<Medal width={36} height={36} />}
           />
